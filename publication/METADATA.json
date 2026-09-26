@@ -1,0 +1,55 @@
+{
+  "accountable_release_steward": null,
+  "authorship_policy": "intentionally anonymous; no personal name or acknowledgement added",
+  "canonical_publication_url": "https://evidencepress.org/releases/ptolemaic-negative-type/",
+  "canonical_url_status": "planned_not_read_back",
+  "repository_url": "https://github.com/ipitchford/ptolemaic-negative-type",
+  "repository_status": "created_empty_no_research_release_at_documentation_checkpoint",
+  "planned_release_tag": "v1.0.0-candidate",
+  "release_version": "1.0.0-candidate",
+  "code_licence": "MIT for original project code only; preserve third-party and historical notices",
+  "core_analytic_range": "m >= 6; strict below the sharp endpoint and non-strict at it",
+  "display_author": "Anonymous",
+  "document_status": "unrefereed candidate prepared for release; public-source attribution update recorded separately from immutable inputs",
+  "doi": "10.5281/zenodo.22983333",
+  "concept_doi": "10.5281/zenodo.22983332",
+  "doi_status": "reserved_unsubmitted_draft_not_published",
+  "external_endpoint_imports": [
+    "P(4)=log_2(3), Baker-Huh-Kummer-Lorscheid v2",
+    "P(5)=log_2(9/4), Ercan v1"
+  ],
+  "external_specialist_peer_review_verified": false,
+  "first_new_cardinality_relative_to_cited_predecessor": 7,
+  "formal_proof_assistant_verification": false,
+  "identity_and_independence_of_supplied_review_verified": false,
+  "manuscript_licence": "CC0-1.0 for original text and project data; component exclusions in LICENSES.md",
+  "supplied_manuscript_pages": 15,
+  "manuscript_pages": 15,
+  "manuscript_pages_status": "Coordinator reports successful native and local rebuild plus all-page visual inspection; final archive binding is recorded separately",
+  "not_claimed": [
+    "external specialist endorsement",
+    "exhaustive priority verification",
+    "formal verification",
+    "full equality classification",
+    "calibrated correctness probability"
+  ],
+  "prepared_date": "2026-09-25",
+  "public_deposition_performed": false,
+  "publication_date": null,
+  "planned_release_date": "2026-09-26",
+  "publication_status": "prepared_candidate_reserved_doi_not_asserted_public",
+  "publisher": {
+    "name": "Evidence Press",
+    "website": "https://evidencepress.org"
+  },
+  "publisher_fields_not_inferred": [
+    "accountable release steward",
+    "actual publication date"
+  ],
+  "component_licence_authority": "Standing user-authorised Evidence Press protocol: CC0 original prose/data, MIT original code; no third-party relicensing",
+  "historical_record_scope": "The original source bundle and received archives retain their 25 September preparation metadata and are not retroactively described as publicly released.",
+  "response_to_review_pages": 2,
+  "supplied_review_disposition": "minor revisions; requested exposition and reporting changes implemented",
+  "title": "Sharp negative type of finite Ptolemaic metrics",
+  "version": "1.0"
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/source-copy/scripts/verify_reporting.py", line 92, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/source-copy/scripts/verify_reporting.py", line 71, in main
+    require(g['minimum_centred_gram_eigenvalue']['value'] is None,'empty minimum must be null')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/source-copy/scripts/verify_reporting.py", line 16, in require
+    if not c:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: empty minimum must be null

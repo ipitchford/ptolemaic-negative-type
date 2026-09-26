@@ -1,0 +1,207 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  10pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{DejaVu Serif}
+  \setmonofont[]{DejaVu Sans Mono}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=24mm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\setstretch{1.05}
+\section{Response to the minor-revisions
+review}\label{response-to-the-minor-revisions-review}
+
+\textbf{Sharp negative type of finite Ptolemaic metrics · version 1.0}\\
+\textbf{Prepared for Evidence Press · 25 September 2026}
+
+\subsection{Disposition}\label{disposition}
+
+All required and recommended bounded revisions have been implemented.
+The theorem and proof have not changed. The received review is preserved
+unchanged in \texttt{RECEIVED\_REVIEW.md}; this response records
+actions, not an additional specialist endorsement. The public manuscript
+remains unrefereed and anonymously presented.
+
+\subsection{Principal requests}\label{principal-requests}
+
+\subsubsection{R4.1 --- Make the induction dependency
+visible}\label{r4.1-make-the-induction-dependency-visible}
+
+Immediately after Theorem 5.1 and before its proof, the manuscript now
+states:
+
+\begin{quote}
+In the proof for m points, this theorem is applied with n+1=a+2≤m−1, so
+its strictness hypothesis comes entirely from the outer induction.
+\end{quote}
+
+The definition of universal strictness and Appendix B are retained. The
+inserted sentence changes exposition, not the hypothesis or argument.
+
+\subsubsection{R4.2 --- Correct the current machine-readable numerical
+summary}\label{r4.2-correct-the-current-machine-readable-numerical-summary}
+
+\texttt{evidence/current/CURRENT\_NUMERICAL\_SUMMARY.json} is the
+current reporting entry point. The four historical empty experiments now
+have null minima and accepted count zero. Their initial sentinels remain
+only in the preserved source files. The two components of the historical
+mixed statistic cannot be reconstructed from its aggregate: they are
+null with status \texttt{not\_separately\_recorded}, rather than
+silently inferred.
+
+The supplied follow-up experiment has been rerun with its original seed
+and sampling design. It now records four distinct measurements:
+centred-Gram minimum eigenvalue, minimum on an orthonormal zero-sum
+subspace, the split-vector gap, and its Rayleigh quotient. Each has an
+accepted-sample count. All 2,400 arrays and measurements are saved at
+full floating-point precision and independently recomputed by the
+reporting verifier.
+
+The adversarial rerun retains all 160 attempts, including solver status,
+convergence flag, iterations, constraint slacks and
+exceptions/rejections. All 160 met the feasibility tolerance; 150 also
+reported convergence. Ten tolerance-feasible runs did not converge
+according to the solver. Their inclusion is explicit and they are
+excluded from the converged-only maxima. The maximum recorded deficit,
+about 3.25×10⁻¹², is not a validated counterexample under a 10⁻⁸
+feasibility allowance.
+
+The reporting verifier checks every stored array, every aggregate and
+three deliberate null/count failures. Original reports and scripts
+remain byte-for-byte unchanged.
+
+\subsubsection{R4.3 --- Identify the advance over the
+predecessor}\label{r4.3-identify-the-advance-over-the-predecessor}
+
+Section 1.1 now says explicitly that the new numerical values begin at
+P(7); P(6) is independently recovered. It explains how star packing
+handles nonnegative inverse vectors in arbitrary dimension and how
+recursive inverse-entry control handles the other signs, avoiding
+separate higher-cardinality case analyses. Attribution for inversion,
+Schur complements, the conjecture, smaller endpoints and complete split
+witnesses is retained.
+
+\subsection{Minor and presentation
+requests}\label{minor-and-presentation-requests}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Request
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Action
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Define snowflake. & Section 1 defines d raised to an exponent α with
+0\textless α≤1. The abstract says ``powered star metrics'' before the
+definition. \\
+Explain the split graph. & Proposition 7.1 specifies its clique,
+independent part, complete cross edges and shortest-path metric. \\
+Show the first new values. & The introduction displays P(7)=log₂(16/9)
+and P(8)=log₂(5/3). \\
+Attach the sharpness regime to packing. & Theorem 3.4 now states
+equal-length attainment when R\_n(T)≥2, alongside the bound. The
+complementary-range caveat remains. \\
+Retain Appendix B. & Retained unchanged, with the same theorem/equation
+references. \\
+Keep the assurance distinctions. & Retained in the abstract/assurance
+line, Section 8 and metadata; the review's REF grade and probabilities
+are not adopted as release attributes. \\
+Add a seven-point illustration. & Section 7 calculates
+zᵀdᵖz=2/3+(3/4)2ᵖ−2 for CS(3,4), with its exact zero and sharp sign. \\
+Record future optimiser diagnostics. & The new reusable script records
+all attempts and distinguishes convergence, feasibility and measurement
+validity. \\
+\end{longtable}
+
+Equality classification, normalised stability and proof-assistant
+formalisation remain future work, as permitted by the review. No new
+claims about them have been added.
+
+\subsection{Verification and scope}\label{verification-and-scope}
+
+The original 65-file archive passed full replay. Core exact, symbolic
+and numerical reports and the 13-group manuscript checks reproduced
+identically; two exploratory reports differed in floating-point values.
+The new revision verifier passes 16 checks, including exact seven-point
+and eight-point calculations. All current numerical measurements have
+been recomputed from their stored arrays, with explicit numerical
+tolerances. The immutable publication replay records exact and numerical
+comparisons separately.
+
+The revised PDF has 15 pages. Theorem and equation labels remain
+unchanged. The proof for m≥6 still does not import the external
+five-point certificate. A pointwise endpoint argument still avoids
+inversion of singular endpoint matrices. The prepared manuscript does
+not imply website deployment, DOI registration, newly assigned
+licensing, or authenticated external peer review.
+
+\end{document}

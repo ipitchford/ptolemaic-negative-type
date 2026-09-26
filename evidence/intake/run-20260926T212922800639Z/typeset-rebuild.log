@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/source-copy/scripts/build_paper.py", line 34, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/source-copy/scripts/build_paper.py", line 25, in main
+    (out/(source.stem+'.failed.log')).write_text(run.stdout+'\n'+run.stderr);raise RuntimeError(source.name+' failed to compile')
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ptolemaic.tex failed to compile

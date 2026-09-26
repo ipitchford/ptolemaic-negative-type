@@ -1,0 +1,30 @@
+{
+  "assurance": "unrefereed; producer-side checking and supplied review artefacts; no verified external specialist review or proof-assistant formalisation",
+  "entry_points": {
+    "numerical_summary": "evidence/current/CURRENT_NUMERICAL_SUMMARY.json",
+    "paper": "paper/ptolemaic.pdf",
+    "replay": "replay_publication.py",
+    "response": "review/RESPONSE_TO_REVIEW.pdf"
+  },
+  "evidence_role": "analytic proof supported by exact identity checks and bounded numerical corroboration",
+  "manuscript": "unrefereed version 1.0; public source adds KSL attribution and authorised publication metadata",
+  "numerical_reporting": "corrected current layer; original files preserved",
+  "prepared_date": "2026-09-25",
+  "publication": "prepared candidate; version DOI reserved in an unsubmitted Zenodo draft; public publication not asserted",
+  "scholarly_creator": "Anonymous",
+  "publisher": "Evidence Press",
+  "original_prose_and_data_licence": "CC0-1.0",
+  "original_code_licence": "MIT",
+  "third_party_rights": "Preserve component terms; NOASSERTION where undocumented; see LICENSES.md",
+  "planned_release_version": "1.0.0-candidate",
+  "planned_release_date": "2026-09-26",
+  "reserved_version_doi": "10.5281/zenodo.22983333",
+  "reserved_concept_doi": "10.5281/zenodo.22983332",
+  "doi_status": "reserved_unsubmitted_draft",
+  "actual_publication_date": null,
+  "planned_repository": "https://github.com/ipitchford/ptolemaic-negative-type",
+  "planned_canonical_url": "https://evidencepress.org/releases/ptolemaic-negative-type/",
+  "historical_input_policy": "Original received archives and 25 September preparation records retain their original dates and scope.",
+  "requested_revisions": "implemented",
+  "version": "1.0"
+}

@@ -1,0 +1,198 @@
+{
+  "arithmetic": "Python standard-library Fraction, no numerical tolerance",
+  "boundary_checks": {
+    "next_R": "10",
+    "next_T": "36/25",
+    "old_quartic_witness_M": "3",
+    "pentagonal_violation": "1/3",
+    "square_gap": "20736/15625"
+  },
+  "counts": {
+    "augmented_inverse_and_Cauchy": 60,
+    "block_deletion": 210,
+    "coefficient_transport": 80,
+    "exact_original_Ptolemy_checks": 1323,
+    "exact_original_triangle_checks": 1770,
+    "exact_power_relaxation_checks": 2208,
+    "exact_shared_negative_example": 1,
+    "gauge_invariance": 60,
+    "inverse_principal_block_PSD": 120,
+    "inverse_triangle_factor_substitutions": 300,
+    "next_radial_positivity_obstruction": 1,
+    "partial_correlation_inverse_identity": 60,
+    "radial_two_radius_exact": 722,
+    "sharp_threshold_witnesses": 4,
+    "strict_cut_base": 120
+  },
+  "shared_negative_example": {
+    "M": "44/17",
+    "h": "5/22",
+    "negative_edges": [
+      "5/17",
+      "5/17",
+      "5/17"
+    ],
+    "triangle_M_cap": "322/121"
+  },
+  "status": "PASS: exact checks; analytic universal arguments are in RESEARCH_NOTE.md",
+  "thresholds": [
+    {
+      "Schoenberg_rank": 5,
+      "T": "16/9",
+      "m": 7,
+      "ordered_distinct_triangles": 210,
+      "oriented_distinct_ptolemy": 105,
+      "patterns": [
+        {
+          "a": 1,
+          "method": "one-positive triangle bound",
+          "r": 6
+        },
+        {
+          "a": 2,
+          "closure_product": "20/27",
+          "kappa": "5/27",
+          "r": 5
+        },
+        {
+          "a": 3,
+          "closure_product": "1",
+          "kappa": "1/3",
+          "r": 4
+        }
+      ],
+      "q_decimal_display_only": 0.8300749985576875,
+      "relaxation_constraints": 210,
+      "witness_parts": [
+        3,
+        4
+      ]
+    },
+    {
+      "Schoenberg_rank": 6,
+      "T": "5/3",
+      "m": 8,
+      "ordered_distinct_triangles": 336,
+      "oriented_distinct_ptolemy": 210,
+      "patterns": [
+        {
+          "a": 1,
+          "method": "one-positive triangle bound",
+          "r": 7
+        },
+        {
+          "a": 2,
+          "closure_product": "5/9",
+          "kappa": "1/9",
+          "r": 6
+        },
+        {
+          "a": 3,
+          "closure_product": "1",
+          "kappa": "1/4",
+          "r": 5
+        },
+        {
+          "a": 4,
+          "adjacent": [
+            3,
+            5
+          ],
+          "method": "balanced transport",
+          "r": 4
+        }
+      ],
+      "q_decimal_display_only": 0.7369655941662062,
+      "relaxation_constraints": 378,
+      "witness_parts": [
+        3,
+        5
+      ]
+    },
+    {
+      "Schoenberg_rank": 7,
+      "T": "25/16",
+      "m": 9,
+      "ordered_distinct_triangles": 504,
+      "oriented_distinct_ptolemy": 378,
+      "patterns": [
+        {
+          "a": 1,
+          "method": "one-positive triangle bound",
+          "r": 8
+        },
+        {
+          "a": 2,
+          "closure_product": "1/4",
+          "kappa": "1/24",
+          "r": 7
+        },
+        {
+          "a": 3,
+          "closure_product": "55/64",
+          "kappa": "11/64",
+          "r": 6
+        },
+        {
+          "a": 4,
+          "closure_product": "1",
+          "kappa": "1/4",
+          "r": 5
+        }
+      ],
+      "q_decimal_display_only": 0.6438561897747247,
+      "relaxation_constraints": 630,
+      "witness_parts": [
+        4,
+        5
+      ]
+    },
+    {
+      "Schoenberg_rank": 8,
+      "T": "3/2",
+      "m": 10,
+      "ordered_distinct_triangles": 720,
+      "oriented_distinct_ptolemy": 630,
+      "patterns": [
+        {
+          "a": 1,
+          "method": "one-positive triangle bound",
+          "r": 9
+        },
+        {
+          "a": 2,
+          "closure_product": "0",
+          "kappa": "0",
+          "r": 8
+        },
+        {
+          "a": 3,
+          "closure_product": "3/4",
+          "kappa": "1/8",
+          "r": 7
+        },
+        {
+          "a": 4,
+          "closure_product": "1",
+          "kappa": "1/5",
+          "r": 6
+        },
+        {
+          "a": 5,
+          "adjacent": [
+            4,
+            6
+          ],
+          "method": "balanced transport",
+          "r": 5
+        }
+      ],
+      "q_decimal_display_only": 0.5849625007211562,
+      "relaxation_constraints": 990,
+      "witness_parts": [
+        4,
+        6
+      ]
+    }
+  ]
+}

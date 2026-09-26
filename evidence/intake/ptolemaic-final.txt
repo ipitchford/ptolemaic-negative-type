@@ -1,0 +1,871 @@
+            Sharp negative type of finite Ptolemaic metrics
+
+
+                                    Evidence Press | Version 1.0
+                                         25 September 2026
+
+
+                                                    Abstract
+         For 𝑚 ≥ 3, let 𝑃(𝑚) be the supremum of the exponents 𝑝 > 0 for which every 𝑚-point Ptolemaic
+      metric has 𝑝-negative type. We prove, for every 𝑚 ≥ 6, that
+                                                                     
+                                                             𝑚
+                                     𝑃(𝑚) = log2 1 +                    ,
+                                                       ⌊(𝑚 − 1) 2 /4⌋
+
+      and that negative type is strict below this exponent. Together with the established three-, four- and
+      five-point cases, this determines 𝑃(𝑚) for all 𝑚 and resolves Conjecture 6.4 of Baker, Huh, Kummer
+      and Lorscheid through their identity 𝑞(𝑛) = 𝑃(𝑛 −1). The proof combines a dimension-independent
+      linear packing estimate for powered star metrics with an induction on normalised entries of inverse
+      augmented distance matrices. Metric inversion allows every principal deletion to remain within the
+      Ptolemaic class. A separate induction on cardinality supplies all positive-definiteness hypotheses
+      from strictly smaller metrics. Complete split metrics give the matching upper bounds. The
+      argument is analytic and imposes no bound on distance ratios; the accompanying exact and symbolic
+      computations check identities and witnesses rather than certify the universal theorem.
+
+Assurance. Unrefereed. The proof and supplied review have undergone producer-side checks and replay;
+proof-assistant verification and external specialist peer review are not claimed.
+
+
+1    Introduction and main results
+A finite metric space (𝑋, 𝑑) is Ptolemaic if
+
+                𝑑 (𝑥, 𝑦)𝑑 (𝑧, 𝑤) ≤ 𝑑 (𝑥, 𝑧)𝑑 (𝑦, 𝑤) + 𝑑 (𝑥, 𝑤)𝑑 (𝑦, 𝑧)        (𝑥, 𝑦, 𝑧, 𝑤 ∈ 𝑋).               (1.1)
+
+It has 𝑝-negative type if its entrywise powered distance matrix 𝐸 𝑝 = (𝑑 (𝑥, 𝑦) 𝑝 ) 𝑥,𝑦 ∈𝑋 satisfies
+
+                                     𝑧T 𝐸 𝑝 𝑧 ≤ 0     whenever 1T 𝑧 = 0.                                      (1.2)
+
+The negative type is strict when the inequality is strict for every nonzero such 𝑧. A snowflake of a metric
+𝑑 is the metric 𝑑 𝛼 , obtained by raising each distance to a power 0 < 𝛼 ≤ 1. We use 𝑝 for the exponent
+throughout; the notation 𝑞(𝑛) is reserved for the triangular-hyperfield threshold discussed below.
+   Set
+                           (𝑚 − 1) 2
+                                    
+                                                        𝑚
+                𝐷𝑚 =                   ,    𝑇𝑚 = 1 +        ,     𝑝 𝑚 = log2 𝑇𝑚 (𝑚 ≥ 3).              (1.3)
+                              4                        𝐷𝑚
+For example, (𝑇3 , 𝑇4 , 𝑇5 , 𝑇6 ) = (4, 3, 9/4, 2). The first two newly determined values are
+
+                               𝑃(7) = log2 (16/9),          𝑃(8) = log2 (5/3).
+
+The sequence 𝑇𝑚 is strictly decreasing, and 𝑝 𝑚 ≤ 1 exactly when 𝑚 ≥ 6.
+
+
+
+                                                       1
+Sharp negative type of finite Ptolemaic metrics                                          Unrefereed v1.0
+
+
+Theorem 1.1 (Sharp threshold for 𝑚 ≥ 6). For every integer 𝑚 ≥ 6, every 𝑚-point Ptolemaic metric
+has 𝑝 𝑚 -negative type, and has strict 𝑝-negative type for every 0 < 𝑝 < 𝑝 𝑚 . For every 𝑝 > 𝑝 𝑚 , an
+explicit complete split metric on 𝑚 points fails to have 𝑝-negative type. Consequently,
+
+          𝑃(𝑚) := sup{𝑝 > 0 : every 𝑚-point Ptolemaic metric has 𝑝-negative type} = 𝑝 𝑚 .
+
+  The proof also establishes strict 𝑝-negative type for all 𝑚 ≥ 3 whenever 0 < 𝑝 < min{1, 𝑝 𝑚 }.
+This weaker small-cardinality statement supplies the induction bases without importing a result at an
+exponent greater than one.
+
+Corollary 1.2 (All cardinalities). Together with 𝑃(3) = 2, 𝑃(4) = log2 3 and 𝑃(5) = log2 (9/4),
+theorem 1.1 gives
+                                     𝑘 +1                                𝑘 +1
+               𝑃(2𝑘 + 1) = 2 log2             (𝑘 ≥ 1),    𝑃(2𝑘) = log2           (𝑘 ≥ 2).          (1.4)
+                                       𝑘                                 𝑘 −1
+In the notation of Baker, Huh, Kummer and Lorscheid,
+                                                          𝑛
+                                                2 log2 𝑛 − 2 ,   𝑛 ≥ 4 even,
+                                               
+                                               
+                                               
+                                               
+                             𝑞(𝑛) = 𝑃(𝑛 − 1) =        𝑛+1                                          (1.5)
+                                                log2
+                                               
+                                                           ,     𝑛 ≥ 5 odd.
+                                                     𝑛−3
+
+1.1   Relation to earlier work
+Baker et al. (2026, Conjecture 6.4 and Proposition 7.5) formulated (1.5) in the study of Lorentzian
+polynomials and weak representations over triangular hyperfields. They identified 𝑞(𝑛) with 𝑃(𝑛 − 1)
+and proved the cases 𝑃(3) and 𝑃(4). Ercan (2026, Theorem 1.1) proved 𝑃(5) = log2 (9/4) and
+𝑃(6) = 1, using partial correlations, a computer-assisted four-point estimate and coefficient transport
+under metric inversion. Our proof independently recovers 𝑃(6); the newly determined values begin at
+𝑃(7) and include every larger cardinality. The external five-point endpoint enters only in corollary 1.2;
+it is not used in the proof of theorem 1.1.
+    Korea Superintelligence Labs (2026, Version 3, Sections 11–12) identified the general anchor
+constants and their complete-split thresholds, and established an obstruction above exponent one.
+That preprint leaves the general low-exponent estimate unresolved (Section 15). Accordingly, the
+constants and split thresholds themselves are not claimed as new here. The contribution is the universal
+star-packing estimate and inverse-correlation induction below one, with their strictness hypotheses
+discharged by the cardinality induction.
+    The matrix language is classical. Schoenberg’s theory identifies negative type with Euclidean
+embeddability of the corresponding snowflake (Schoenberg, 1938). Strict negative type and its exponent
+range were studied by Li and Weston (2010); inverse-distance criteria for the supremal exponent appear
+in Sánchez (2012). Augmented distance matrices and their relation to circumcentres belong to distance
+geometry (Fiedler, 2011). We reproduce the identities needed here. The contribution of the present
+argument is the star-packing estimate in theorem 3.4 and its use in the inverse-correlation induction
+of theorem 5.1. These replace the need for separate higher-cardinality sign-pattern analyses: packing
+handles the nonnegative inverse-vector case in every dimension, and a recursive inverse-entry bound
+handles the remaining signs. Inversion, Schur complements and the complete split witnesses retain the
+attributions above.
+
+1.2   Structure of the proof
+For 0 < 𝑝 < 1, the exact star with prescribed distances from a root gives an entrywise lower bound for
+the Schoenberg matrix of any metric with those root distances. Direct monotonicity of the relevant
+
+
+                                                     2
+Sharp negative type of finite Ptolemaic metrics                                                            Unrefereed v1.0
+
+
+inverse pairing fails. Instead, a packing theorem controls a nonnegative subsolution of the star’s linear
+system. This proves the required inverse bound whenever either of two inverse vectors is nonnegative.
+   For the other sign patterns, we select a most negative normalised inverse entry. Deleting a third index
+either makes it more negative, creates a controlled negative triangle, or forces the nonnegative-vector
+case. The dimension-dependent constants satisfy the recursion required by this deletion argument.
+   Finally, a coefficient vector on an 𝑚-point metric has a smaller sign class of size 𝑎 ≤ 𝑚/2. Every
+pairwise Schur estimate then involves only 𝑎 + 2 ≤ 𝑚 − 1 points. The strict-negative-type induction
+therefore supplies its hypotheses at the same exponent from strictly smaller metrics. We prove the
+endpoint by pointwise continuity after the strict induction has closed.
+
+
+2    Gram matrices and the four-point base
+Vectors are columns, 1 denotes an all-ones vector of the indicated length, and matrix inequalities without
+⪰ are entrywise. For a symmetric matrix 𝐻, 𝐻 ≻ 0 and 𝐻 ⪰ 0 denote positive definiteness and positive
+semidefiniteness. We record inertia as the triple of positive, negative and zero eigenvalue counts.
+  Let 𝐸 = (𝑒 𝑖 𝑗 )𝑖,𝑛 𝑗=0 be symmetric with zero diagonal. Take 0 as a root, put 𝑟 𝑖 = 𝑒 0𝑖 , and define
+                                                 𝑟𝑖 + 𝑟 𝑗 − 𝑒𝑖 𝑗
+                                        𝐶𝑖 𝑗 =                      (1 ≤ 𝑖, 𝑗 ≤ 𝑛).                                  (2.1)
+                                                       2
+In particular, 𝐶𝑖𝑖 = 𝑟 𝑖 . If 𝑧 0 = −
+                                        Í𝑛               ′ = (𝑧 , . . . , 𝑧 ) T , direct expansion gives
+                                         𝑖=1 𝑧 𝑖 and 𝑧         1           𝑛
+
+                                                  𝑧 T 𝐸 𝑧 = −2(𝑧 ′ ) T 𝐶𝑧 ′ .                                        (2.2)
+Thus 𝐸 = 𝑑 𝑝 has strict negative type exactly when 𝐶 ≻ 0. If 𝐶 ⪰ 0, choose vectors with Gram matrix
+𝐶 and adjoin the origin; their squared distances are the entries of 𝐸. When 𝐶 ≻ 0, these 𝑛 + 1 points
+are affinely independent. This is the finite-dimensional form of Schoenberg’s correspondence.
+Lemma 2.1 (Strictness on at most four points). Let 𝑑 be any metric on at most four points and let
+0 < 𝑝 < 1. Then 𝑑 has strict 𝑝-negative type.
+Proof. The powered array 𝑒 𝑖 𝑗 = 𝑑 (𝑖, 𝑗) 𝑝 has strict triangle inequalities on distinct points: for 𝑠, 𝑡 > 0,
+(𝑠 + 𝑡) 𝑝 < 𝑠 𝑝 + 𝑡 𝑝 . For four points, write its root Gram matrix as
+                                                         𝑠1 𝑥 𝑦
+                                                   𝐶 = ­ 𝑥 𝑠2 𝑧 ® .
+                                                       ©        ª
+
+                                                       « 𝑦 𝑧 𝑠3 ¬
+The strict triangle inequalities imply
+                         max{0, 𝑥 + 𝑦 − 𝑠1 , 𝑥 + 𝑧 − 𝑠2 , 𝑦 + 𝑧 − 𝑠3 } < min{𝑥, 𝑦, 𝑧}.                               (2.3)
+Indeed, root triangles give 0 < 𝑥 < min(𝑠1 , 𝑠2 ) and the corresponding inequalities for 𝑦, 𝑧. The three
+non-root triangle inequalities give, respectively, 𝑥 + 𝑦 − 𝑠1 < 𝑧, 𝑥 + 𝑧 − 𝑠2 < 𝑦 and 𝑦 + 𝑧 − 𝑠3 < 𝑥; the
+other comparisons follow from the root triangle inequalities.
+   Choose 𝜃 strictly inside the interval in (2.3). Then 𝐶 is the sum of 𝑏𝑏 T over
+                   𝑏 ∈ {(1, 1, 1), (1, 1, 0), (1, 0, 1), (0, 1, 1), (1, 0, 0), (0, 1, 0), (0, 0, 1)}
+with respective coefficients
+                  𝜃, 𝑥 − 𝜃, 𝑦 − 𝜃, 𝑧 − 𝜃, 𝑠1 − 𝑥 − 𝑦 + 𝜃, 𝑠2 − 𝑥 − 𝑧 + 𝜃, 𝑠3 − 𝑦 − 𝑧 + 𝜃.
+All seven coefficients are positive. The last three terms already form a positive definite diagonal matrix,
+so 𝐶 ≻ 0.
+                                
+   For three points, 𝐶 = 𝑟𝑠1 𝑟𝑠2 with 0 < 𝑠 < min(𝑟 1 , 𝑟 2 ), which is positive definite. The two-point case
+is immediate from (1.2).                                                                                   □
+
+                                                              3
+Sharp negative type of finite Ptolemaic metrics                                              Unrefereed v1.0
+
+
+3     A packing inequality for snowflaked stars
+Fix 0 < 𝑝 < 1 for this section and put
+                        𝑇 = 2𝑝,         𝛿 = 𝑇 − 1,         𝑎 0 = 𝑇/2,       𝑐 = 1 − 𝑇/2.               (3.1)
+For 𝑛 ≥ 1, set
+                                             2𝑛
+                         𝑅𝑛 (𝑇) =                      ,        𝐿 𝑛 (𝑇) = max{2, 𝑅𝑛 (𝑇)}.               (3.2)
+                                       2𝑛 − (𝑛 − 1)𝑇
+The denominators are positive because 1 < 𝑇 < 2. Both 𝑅𝑛 (𝑇) and 𝐿 𝑛 (𝑇) are non-decreasing in 𝑛.
+  Given ℓ1 , . . . , ℓ𝑛 > 0, let 𝑟 𝑖 = ℓ𝑖𝑝 and let 𝑅 be the Schoenberg matrix of the powered star with these
+root-to-leaf lengths:
+                                                      𝑟 𝑖 + 𝑟 𝑗 − (ℓ𝑖 + ℓ 𝑗 ) 𝑝
+                              𝑅𝑖𝑖 = 𝑟 𝑖 ,      𝑅𝑖 𝑗 =                           (𝑖 ≠ 𝑗).                (3.3)
+                                                                  2
+Put 𝐷 = diag(𝑟) and 𝐵 = 𝑅𝐷 −1 . Thus 𝐵𝑖𝑖 = 1 and
+                                                           1 + 𝑡 𝑝 − (1 + 𝑡) 𝑝
+                         𝐵𝑖 𝑗 = 𝑏(ℓ𝑖 /ℓ 𝑗 ),      𝑏(𝑡) =                         (𝑖 ≠ 𝑗).              (3.4)
+                                                                    2
+Strict subadditivity shows that 𝑏(𝑡) > 0, and
+                                           𝑝
+                                  𝑏 ′ (𝑡) = 𝑡 𝑝−1 − (1 + 𝑡) 𝑝−1 > 0.
+                                                               
+                                           2
+Also 𝑏(1) = 𝑐.
+Proposition 3.1 (A positive-kernel representation). The matrix 𝑅 is positive definite in every dimension.
+Proof. Substitution and integration by parts give
+                                               ∫ ∞
+                                          𝑝
+                                 𝑝
+                               𝑥 =                  (1 − 𝑒 −𝑠𝑥 )𝑠 −1− 𝑝 d𝑠.
+                                     Γ(1 − 𝑝) 0
+Consequently the kernel
+                                                        ∫ ∞
+                     𝑥 𝑝 + 𝑦 𝑝 − (𝑥 + 𝑦) 𝑝        𝑝
+          𝑔(𝑥, 𝑦) =                         =                 (1 − 𝑒 −𝑠𝑥 ) (1 − 𝑒 −𝑠𝑦 )𝑠 −1− 𝑝 d𝑠
+                               2              2Γ(1 − 𝑝) 0
+is positive semidefinite. The integrals converge: at zero the product is 𝑂 (𝑠2 ), and at infinity it is
+bounded. Since 𝑔(ℓ𝑖 , ℓ𝑖 ) = 𝑐𝑟 𝑖 ,
+                                    𝑅 = 𝑎 0 𝐷 + [𝑔(ℓ𝑖 , ℓ 𝑗 )] ≻ 0.
+                                                                                                           □
+
+    The following scalar estimate is the main analytic input.
+Lemma 3.2 (A supporting power). For 𝑡 > 0, define 𝐾 (𝑡) = (1 + 𝑡) 𝑝 − 𝑡 𝑝 and 𝛽 = 𝑝𝑐/𝛿. Then
+                                                  𝐾 (𝑡) ≤ 𝛿𝑡 −𝛽 ,                                      (3.5)
+with equality exactly when 𝑡 = 1.
+Proof. Let ℎ(𝑠) = log 𝐾 (𝑒 𝑠 ) and 𝑧 = 𝑒 𝑠 /(1 + 𝑒 𝑠 ) ∈ (0, 1). Differentiation yields
+                                       𝑧 − 𝑧𝑝
+                            ℎ′ (𝑠) = 𝑝        ,                                                        (3.6)
+                                       1 − 𝑧𝑝
+                                                                          
+                             ′′
+                                     𝑝𝑧(1 − 𝑧) 1 − (1 − 𝑝)𝑧 𝑝 − 𝑝𝑧 𝑝−1
+                           ℎ (𝑠) =                                            < 0.                     (3.7)
+                                                    (1 − 𝑧 𝑝 ) 2
+For the sign, weighted arithmetic–geometric mean gives
+                                (1 − 𝑝)𝑧 𝑝 + 𝑝𝑧 𝑝−1 > (𝑧 𝑝 ) 1− 𝑝 (𝑧 𝑝−1 ) 𝑝 = 1.
+The inequality is strict since the weights are positive and 𝑧 𝑝 ≠ 𝑧 𝑝−1 . At zero, ℎ(0) = log 𝛿 and
+ℎ′ (0) = −𝑝𝑐/𝛿 = −𝛽. The graph of the strictly concave function ℎ lies below its tangent at zero,
+proving (3.5) and its equality statement.                                                         □
+
+                                                           4
+Sharp negative type of finite Ptolemaic metrics                                              Unrefereed v1.0
+
+
+Lemma 3.3 (Positive solutions of the star system). If 𝐵𝑤 = 1 and 𝑤 > 0, then 1T 𝑤 ≤ 𝐿 𝑛 (𝑇).
+                 Í
+Proof. Write 𝑀 = 𝑖 𝑤 𝑖 and define
+                                               ∑︁
+                                       𝐹 (𝑡) =    𝑏(𝑡/ℓ 𝑗 )𝑤 𝑗 .
+                                                               𝑗
+
+The function 𝐹 is increasing. Its diagonal contribution at 𝑡 = ℓ𝑖 is 𝑐𝑤 𝑖 , whereas the diagonal contribution
+in 𝐵𝑤 is 𝑤 𝑖 . Thus
+                                            𝐹 (ℓ𝑖 ) + 𝑎 0 𝑤 𝑖 = 1.
+It follows that 𝑤 𝑖 is non-increasing as ℓ𝑖 increases.
+    The 𝑖th row equation also reads
+                                                     ∑︁
+                                      𝑀 + 𝑤𝑖 = 2 +      𝐾 (ℓ𝑖 /ℓ 𝑗 )𝑤 𝑗 .
+                                                                   𝑗≠𝑖
+
+          −𝛽         Í                        Í
+Set 𝑡 𝑖 = ℓ𝑖 , 𝐻 =       𝑖 𝑤 𝑖 /𝑡 𝑖 and 𝑆 =       𝑖 1/𝑡 𝑖 . By lemma 3.2,
+
+                                                    𝑀 + 𝑇 𝑤 𝑖 − 𝛿𝑡 𝑖 𝐻 ≤ 2.
+
+After division by 𝑡𝑖 and summation, this becomes
+                                                         
+                                   (𝑀 − 2)𝑆 ≤ (𝑛 − 1)𝛿 − 1 𝐻.                                           (3.8)
+
+If 𝑀 ≤ 2, the conclusion follows. Otherwise the coefficient on the right is positive. The sequences 𝑤 𝑖
+            𝛽
+and 1/𝑡𝑖 = ℓ𝑖 are oppositely ordered, so
+                                           ∑︁
+                                                             𝛽     𝛽
+                              𝑀𝑆 − 𝑛𝐻 = −     (𝑤 𝑖 − 𝑤 𝑗 ) (ℓ𝑖 − ℓ 𝑗 ) ≥ 0.                       (3.9)
+                                                        𝑖< 𝑗
+
+Hence 𝐻/𝑆 ≤ 𝑀/𝑛. Substituting in (3.8) gives
+                                                   
+                                    𝑛 + 1 − (𝑛 − 1)𝛿 𝑀 ≤ 2𝑛,
+
+which is 𝑀 ≤ 𝑅𝑛 (𝑇).                                                                                       □
+
+Theorem 3.4 (Star packing). For every positive length vector, every 𝑤 ≥ 0 satisfying 𝐵𝑤 ≤ 1 obeys
+                                                                   
+                             T                             2𝑛
+                            1 𝑤 ≤ 𝐿 𝑛 (𝑇) = max 2,                    .                      (3.10)
+                                                     2𝑛 − (𝑛 − 1)𝑇
+When 𝑅𝑛 (𝑇) ≥ 2, this bound is attained for equal lengths.
+Proof. We induct on 𝑛; the case 𝑛 = 1 is immediate. The polytope
+
+                                          P = {𝑤 ∈ R𝑛 : 𝑤 ≥ 0, 𝐵𝑤 ≤ 1}
+
+is nonempty and compact. Indeed 𝐵 has positive entries and diagonal one, so every feasible coordinate
+lies in [0, 1]. Choose a vertex maximising 1T 𝑤.
+   If its support has 𝑘 < 𝑛 elements, the corresponding 𝑘 row inequalities give the same packing
+problem for the length vector on that support. Induction gives 1T 𝑤 ≤ 𝐿 𝑘 (𝑇) ≤ 𝐿 𝑛 (𝑇); the omitted row
+constraints can only reduce the feasible set.
+   Otherwise all coordinates are positive and none of the nonnegativity constraints is active. A vertex in
+R requires 𝑛 linearly independent active constraints. There are exactly 𝑛 remaining constraints, namely
+  𝑛
+
+the rows of 𝐵𝑤 ≤ 1, so all must be equalities. Lemma 3.3 applies.                                       □
+
+Remark 3.5. When 𝑅𝑛 (𝑇) ≥ 2, equal lengths and the vector 𝑤 = [1 + (𝑛 − 1)𝑐] −1 1 attain (3.10). We
+do not assert that the constant 2 is optimal in the complementary parameter range. In particular, the
+theorem does not assert nonnegativity of 𝑅 −1 1 or 𝑅 −1𝑟.
+
+                                                                   5
+Sharp negative type of finite Ptolemaic metrics                                                               Unrefereed v1.0
+
+
+4     Inverse pairings, augmented matrices and inversion
+Fix 0 < 𝑝 < 1 and let 𝐸 = 𝑑 𝑝 be a powered metric with a positive definite root Gram matrix 𝐶 of order
+𝑛. Define
+
+      𝑟 = diag 𝐶,     𝑢 = 𝐶 −1𝑟,       𝑣 = 𝐶 −1 1,        𝜇 = 1T 𝑢 = 𝑟 T 𝑣,           𝑈 = 1T 𝐶 −1 1,   𝑉 = 𝑟 T 𝐶 −1𝑟.   (4.1)
+
+Both 𝑈, 𝑉 are positive. Cauchy–Schwarz in the 𝐶 −1 inner product gives
+
+                                                           𝑈𝑉 ≥ 𝜇2 .                                                    (4.2)
+
+The root-dependent quantity 𝜇 is only an auxiliary mixed inverse pairing. We do not identify it with the
+usual metric 𝑀-constant or claim a new invariant.
+
+Lemma 4.1 (Nonnegative inverse vectors). If either 𝑢 ≥ 0 or 𝑣 ≥ 0, then 𝜇 ≤ 𝐿 𝑛 (𝑇).
+
+Proof. Choose ℓ𝑖 = 𝑑 (0, 𝑖) and form the star matrix 𝑅 in (3.3). The triangle inequality gives 𝐶 ≥ 𝑅
+entrywise, with identical diagonals. If 𝑣 ≥ 0, then 𝑤 = 𝐷𝑣 ≥ 0 and
+
+                                                    𝐵𝑤 = 𝑅𝑣 ≤ 𝐶𝑣 = 1.
+                      Í
+Theorem 3.4 gives 𝜇 = 𝑖 𝑤 𝑖 ≤ 𝐿 𝑛 (𝑇).
+  If 𝑢 ≥ 0, put 𝐶 ∗ = 𝐷 −1𝐶𝐷 −1 and 𝑅 ∗ = 𝐷 −1 𝑅𝐷 −1 . Their common diagonal is 𝑟 ∗ = 1/𝑟,
+componentwise, and 𝑅 ∗ is exactly the star matrix for the reciprocal lengths 1/ℓ𝑖 . Also
+
+                                   (𝐶 ∗ ) −1 1 = 𝐷𝑢 ≥ 0,               (𝑟 ∗ ) T (𝐶 ∗ ) −1 1 = 𝜇.
+
+The preceding packing argument applies to 𝐶 ∗ ≥ 𝑅 ∗ . This step is a diagonal congruence calculation
+and needs no claim of monotonicity of inverse matrices or inverse pairings.                        □
+
+4.1    The augmented inverse
+Adjoin an index ∞ and set
+
+                                      𝐴∞𝑖 = 𝐴𝑖∞ = 1,             𝐴𝑖 𝑗 = 𝑒 𝑖 𝑗 ,       𝐴𝑖𝑖 = 0.                          (4.3)
+
+In the order ∞, 0, 1, . . . , 𝑛,
+                                                0 1        1T
+                                           𝐴 = ­1 0        𝑟T
+                                               ©                     ª
+                                                                     ®.
+                                                       T      T
+                                               «1 𝑟 𝑟1   + 1𝑟   − 2𝐶 ¬
+The Schur complement of the leading 2 × 2 block is −2𝐶. Thus
+
+                                                In( 𝐴) = (1, 𝑛 + 1, 0),                                                 (4.4)
+
+and direct block inversion gives
+
+                                               −𝑉/2 1 − 𝜇/2  𝑢 T /2
+                                      𝐴 −1 = ­1 − 𝜇/2 −𝑈/2   𝑣 T /2 ® .                                                 (4.5)
+                                             ©                      ª
+
+                                             « 𝑢/2     𝑣/2  −𝐶 −1 /2¬
+
+Whenever the inverse diagonal is negative, write
+
+                                                             ( 𝐴 −1 )𝑖 𝑗
+                                   𝜌𝑖 𝑗 ( 𝐴) = √︁                                        (𝑖 ≠ 𝑗).                       (4.6)
+                                                    [−( 𝐴 −1 )𝑖𝑖 ] [−( 𝐴 −1 ) 𝑗 𝑗 ]
+
+
+                                                                 6
+Sharp negative type of finite Ptolemaic metrics                                              Unrefereed v1.0
+
+
+In particular,
+                                                           2−𝜇
+                                                𝜌∞0 ( 𝐴) = √   .                                        (4.7)
+                                                            𝑈𝑉
+Define                                                                  
+                                              2             (𝑛 − 1)𝑇 − 𝑛
+                             𝑘 𝑛 (𝑇) = 1 −         = max 0,                .                            (4.8)
+                                           𝐿 𝑛 (𝑇)                𝑛
+By lemma 4.1, either 𝑢 ≥ 0 or 𝑣 ≥ 0 implies
+
+                                               𝜌∞0 ( 𝐴) ≥ −𝑘 𝑛 (𝑇).                                     (4.9)
+
+Indeed, for 𝜇 ≤ 2 the numerator in (4.7) is nonnegative; for 2 < 𝜇 ≤ 𝐿 𝑛 (𝑇), (4.2) gives
+                                                     2−𝜇      2
+                                      𝜌∞0 ( 𝐴) ≥         ≥         − 1.
+                                                      𝜇    𝐿 𝑛 (𝑇)
+Remark 4.2 (Classical distance-geometric quantities). If vectors with Gram matrix 𝐶 are assembled as
+the columns of 𝑋, the sphere through these vectors and the origin has centre 𝑋𝐶 −1𝑟/2. Its barycentric
+coefficient at the root is 1 − 𝜇/2. This explains the mixed pairing in (4.1). Also 1T 𝐸 −1 1 = 2/𝑉,
+whenever 𝐶 ≻ 0: the latter condition gives 𝑛 negative eigenvalues of 𝐸 by (2.2) and a positive eigenvalue
+because its off-diagonal entries are positive. Comparison of the ∞∞ block of (4.5) with the Schur
+complement of 𝐸 proves the formula. These relations place our auxiliary quantities within the classical
+framework of Fiedler (2011) and the inverse-distance criteria discussed by Sánchez (2012).
+
+4.2   Changing the distinguished index
+A positive diagonal congruence 𝐴 ↦→ 𝑆 𝐴𝑆 sends its inverse to 𝑆 −1 𝐴 −1 𝑆 −1 . It preserves all signs and all
+quantities (4.6). Any row can be normalised to have off-diagonal entries one.
+
+Lemma 4.3 (Inversion closure). Let (𝑋, 𝑑) be Ptolemaic and 𝑜 ∈ 𝑋. On (𝑋 \ {𝑜}) ∪ {∞} define
+
+                                              𝑑 (𝑖, 𝑗)                         1
+                             𝑑b(𝑖, 𝑗) =                    ,   𝑑b(∞, 𝑖) =            .                (4.10)
+                                          𝑑 (𝑜, 𝑖)𝑑 (𝑜, 𝑗)                  𝑑 (𝑜, 𝑖)
+
+Then 𝑑bis a Ptolemaic metric. Normalising row 𝑜 of the augmented powered-distance matrix gives the
+augmented matrix of 𝑑b𝑝 .
+
+Proof. All distances between distinct points are positive. Multiplying a triangle inequality among three
+finite points by the product of their three distances to 𝑜 gives a Ptolemy inequality for 𝑑. A triangle
+inequality involving ∞ becomes a triangle inequality involving 𝑜 in the original metric. Ptolemy
+inequalities on four finite points are preserved after multiplication by their common denominator. A
+Ptolemy inequality containing ∞ reduces to an ordinary triangle inequality for 𝑑. This checks every
+case. For the matrix statement, take the diagonal scale at 𝑜 to be one and the scale at any other index 𝑖
+to be 1/𝐴𝑜𝑖 .                                                                                          □
+
+   Every principal submatrix of an augmented array, of order at least three, is therefore diagonally
+congruent to an augmented powered-distance matrix of a Ptolemaic metric with one fewer point than
+its matrix order. If the principal submatrix does not contain the original ∞, first normalise one of its
+indices and then restrict the inverted metric. An order-two principal matrix has inertia (1, 1, 0) directly.
+
+
+
+
+                                                          7
+Sharp negative type of finite Ptolemaic metrics                                                   Unrefereed v1.0
+
+
+4.3   Proper-subset inertia
+For 𝑗 ≥ 2, let S 𝑝 ( 𝑗) denote the following universal statement:
+      Every Ptolemaic metric on at most 𝑗 points has strict 𝑝-negative type.
+This includes all inverted metrics, not just subsets of one fixed metric.
+Lemma 4.4 (Inverse two-by-two blocks). Assume S 𝑝 (𝑛 + 1) for some 𝑛 ≥ 2, and let 𝐴 augment an
+(𝑛 + 1)-point Ptolemaic metric powered by 𝑝. Every principal 2 × 2 block of 𝐴 −1 is negative definite.
+In particular all inverse diagonal entries are negative and |𝜌𝑖 𝑗 ( 𝐴)| < 1.
+Proof. By (4.4), 𝐴 has inertia (1, 𝑛 + 1, 0). Delete a pair of indices 𝐽 and call the complementary
+principal matrix 𝐻. It has order 𝑛. If 𝑛 = 2, 𝐻 has inertia (1, 1, 0) directly. Otherwise lemma 4.3 and
+S 𝑝 (𝑛 + 1) give In(𝐻) = (1, 𝑛 − 1, 0).
+   The standard block congruence underlying inertia additivity (Haynsworth, 1968) is
+                                 T 
+                      𝐼 −𝐻 −1 𝑍       𝐻 𝑍 𝐼 −𝐻 −1 𝑍
+                                                                              
+                                                                 𝐻          0
+                                                            =                        .
+                      0     𝐼         𝑍T 𝑌 0          𝐼          0 𝑌 − 𝑍 T 𝐻 −1 𝑍
+
+Its 2 × 2 Schur complement has inertia (0, 2, 0). Its inverse is ( 𝐴 −1 ) 𝐽 𝐽 , which is negative definite. The
+stated diagonal and correlation conclusions follow from its principal minors.                                 □
+
+
+5     A normalised inverse-correlation bound
+The next theorem is conditional on strictness of smaller-cardinality metrics. That hypothesis is
+discharged only in section 6.
+Theorem 5.1 (Inverse-correlation induction). Fix 0 < 𝑝 < 1, put 𝑇 = 2 𝑝 , and let 𝑛 ≥ 2. Assume
+S 𝑝 (𝑛 + 1). If 𝑛 ≥ 3, suppose also that
+                                                 𝑛
+                                          𝑇≤        .                                         (5.1)
+                                               𝑛−2
+Then every augmented powered-distance matrix 𝐴 of an (𝑛 + 1)-point Ptolemaic metric satisfies
+
+                                        𝜌𝑖 𝑗 ( 𝐴) ≥ −𝑘 𝑛 (𝑇)        (𝑖 ≠ 𝑗).                                (5.2)
+
+For 𝑛 = 2, the conclusion holds without (5.1).
+In the proof for 𝑚 points, this theorem is applied with 𝑛 + 1 = 𝑎 + 2 ≤ 𝑚 − 1, so its strictness hypothesis
+comes entirely from the outer induction.
+
+Proof. We induct on 𝑛. When 𝑛 = 2, normalise either index of the pair as ∞ and take the other as the
+root. The resulting three-point powered metric has strict triangle inequalities. Its root Gram matrix
+            
+𝐶 = 𝑟𝑠1 𝑟𝑠2 has 0 < 𝑠 < min(𝑟 1 , 𝑟 2 ), which gives 𝑢, 𝑣 > 0 directly. Since 𝑘 2 (𝑇) = 0, (4.9) proves the
+claim in every gauge.
+   Now let 𝑛 ≥ 3. The lower-dimensional strictness hypothesis follows from S 𝑝 (𝑛 + 1), and its parameter
+condition, when needed, follows because 𝑛/(𝑛 − 2) decreases with 𝑛. Write 𝑊 = 𝐴 −1 . If no off-diagonal
+entry is negative, there is nothing to prove. Otherwise choose a most negative normalised entry, at
+indices 𝑖, 𝑗, and write
+                                             𝛾 = −𝜌𝑖 𝑗 ( 𝐴) > 0.
+By lemma 4.4, 𝛾 < 1. Suppose, for a contradiction, that 𝛾 > 𝑘 𝑛 (𝑇).
+  For any third index ℓ, set
+                                         𝑊𝑖ℓ                                   𝑊 𝑗ℓ
+                          𝑠 = − √︁                     ,       𝑡 = − √︁                       .
+                                     (−𝑊𝑖𝑖 ) (−𝑊ℓℓ )                      (−𝑊 𝑗 𝑗 ) (−𝑊ℓℓ )
+
+                                                           8
+Sharp negative type of finite Ptolemaic metrics                                            Unrefereed v1.0
+
+
+Deleting ℓ from 𝐴 changes the inverse by
+                                                                𝑊ℓ,ℓ
+                                                                 ¯ 𝑊ℓ, ℓ¯
+                                           𝑊 (ℓ ) = 𝑊ℓ,¯ ℓ¯ −               .                         (5.3)
+                                                          𝑊ℓℓ
+The signed negative magnitude of the new 𝑖 𝑗 entry is therefore
+                                                  𝛾 − 𝑠𝑡
+                                     𝛾 ′ = √︁                      .                                  (5.4)
+                                              (1 − 𝑠2 ) (1 − 𝑡 2 )
+The denominator is positive by lemma 4.4. The deleted matrix can be normalised as the augmentation
+of an 𝑛-point Ptolemaic metric, even when ℓ is the original ∞. The induction hypothesis applies to it.
+   If 𝑠𝑡 ≤ 0, then 𝛾 ′ ≥ 𝛾 > 𝑘 𝑛 (𝑇) ≥ 𝑘 𝑛−1 (𝑇), a contradiction. Thus, for each third index, both incident
+entries are nonzero and have the same sign.
+   Suppose that for some ℓ both incident inverse entries are negative. Then 0 < 𝑠, 𝑡 ≤ 𝛾 by maximality.
+Since
+                                (1 − 𝑠𝑡) 2 − (1 − 𝑠2 ) (1 − 𝑡 2 ) = (𝑠 − 𝑡) 2 ≥ 0,                     (5.5)
+and 𝛾 − 𝑠𝑡 ≥ 𝛾 − 𝛾 2 > 0, we have
+                                              𝛾 − 𝑠𝑡 𝛾 − 𝛾 2    𝛾
+                                      𝛾′ ≥           ≥       =      .                                 (5.6)
+                                              1 − 𝑠𝑡   1 − 𝛾2 1 + 𝛾
+The middle inequality uses 𝑠𝑡 ≤ 𝛾 2 and the fact that (𝛾 − 𝑥)/(1 − 𝑥) decreases with 𝑥 for 𝛾 < 1.
+   The constants satisfy
+                                                       𝑘 𝑛 (𝑇)
+                                         𝑘 𝑛−1 (𝑇) ≤             .                                (5.7)
+                                                     1 + 𝑘 𝑛 (𝑇)
+If 𝑘 𝑛−1 = 0 this is immediate; if 𝑘 𝑛 = 0, monotonicity in 𝑛 gives 𝑘 𝑛−1 = 0 as well. When both are
+positive, direct simplification yields
+                            𝑘 𝑛 (𝑇)                 (𝑇 − 1) [𝑛 − (𝑛 − 2)𝑇]
+                                      − 𝑘 𝑛−1 (𝑇) =                        ≥ 0.                       (5.8)
+                          1 + 𝑘 𝑛 (𝑇)                     𝑇 (𝑛 − 1)
+Since 𝑥/(1 + 𝑥) is increasing, (5.6) and 𝛾 > 𝑘 𝑛 contradict the lower-dimensional bound.
+   The only remaining case is that every third index has two positive incident inverse entries. Normalise
+𝑖 as ∞ and take 𝑗 as the root. In (4.5) this says 𝑢, 𝑣 > 0. The metric remains Ptolemaic by lemma 4.3,
+and its Gram matrix is positive definite by S 𝑝 (𝑛 + 1). Equation (4.9) bounds the selected entry below
+by −𝑘 𝑛 (𝑇), the final contradiction.                                                                  □
+
+5.1   Conditioned correlations
+Let a Ptolemaic metric have 𝑎 distinguished anchors and two further points. Choose one anchor as root.
+Assuming positive definiteness, partition its Gram matrix as
+                                             
+                                       𝐾 𝐿
+                               𝐶= T             ,   𝑆 = 𝐻 − 𝐿 T 𝐾 −1 𝐿,
+                                       𝐿 𝐻
+where 𝐾 is indexed by the other 𝑎 − 1 anchors and 𝑆 by the two poles. The corresponding pole block of
+the augmented inverse is −𝑆 −1 /2. For a positive definite 2 × 2 matrix,
+                                              (−𝑆 −1 )12                𝑆12
+                                     √︁                           =√           .                      (5.9)
+                                          (−𝑆 −1 )11 (−𝑆 −1 )22        𝑆11 𝑆22
+This follows by writing out the two-by-two inverse; in particular the sign has not been lost by squaring.
+Corollary 5.2 (Anchor–pole estimate). Suppose 𝑎 ≥ 2, S 𝑝 (𝑎 + 2) holds, and 𝑇 ≤ (𝑎 + 1)/(𝑎 − 1).
+Then                                                                      
+                                 √︁                             𝑎𝑇 − 𝑎 − 1
+                   𝑆12 ≥ −𝜅 𝑎 (𝑇) 𝑆11 𝑆22 ,    𝜅 𝑎 (𝑇) = max 0,              .            (5.10)
+                                                                  𝑎+1
+Proof. Apply theorem 5.1 with 𝑛 = 𝑎 + 1 and use (5.9).                                        □
+
+                                                           9
+Sharp negative type of finite Ptolemaic metrics                                                Unrefereed v1.0
+
+
+6     Induction on the number of points
+Proposition 6.1 (Strict subcritical negative type). For every 𝑚 ≥ 3, every 𝑚-point Ptolemaic metric
+has strict 𝑝-negative type whenever
+
+                                              0 < 𝑝 < min{1, 𝑝 𝑚 }.                                      (6.1)
+
+Every two-point metric has strict 𝑝-negative type for every 𝑝 > 0.
+
+Proof. We use strong induction on 𝑚. The cases 𝑚 ≤ 4 follow from lemma 2.1. Fix 𝑚 ≥ 5 and an
+exponent in (6.1). The sequence 𝑇 𝑗 decreases with 𝑗: writing 𝑗 = 2𝑘 + 1 or 2𝑘 gives
+                                                          2
+                                                  𝑘 +1                      𝑘 +1
+                                   𝑇2𝑘+1 =                      ,   𝑇2𝑘 =        ,
+                                                    𝑘                       𝑘 −1
+
+and the two adjacent comparisons are strict. Hence the strong induction hypothesis gives S 𝑝 (𝑚 − 1) at
+the current exponent 𝑝. In particular it covers all smaller Ptolemaic metrics obtained by inversion and
+restriction.
+   Let 𝑧 ≠ 0 satisfy 1T 𝑧 = 0. If some coordinates vanish, apply the induction hypothesis to its proper
+support. Otherwise reverse its sign if necessary, so that it has 𝑎 positive and 𝑟 negative coordinates with
+𝑎 ≤ 𝑟 and 𝑎 + 𝑟 = 𝑚. By homogeneity, normalise both absolute coefficient sums to one.
+                                                                           Í
+   If 𝑎 = 1, write the negative coefficients as −𝛽𝑖 , with 𝛽𝑖 > 0 and 𝑖 𝛽𝑖 = 1. The powered array
+𝐸 = 𝑑 𝑝 is an ordinary metric, so
+                       1         ∑︁           ∑︁
+                      − 𝑧T 𝐸 𝑧 =    𝛽𝑖 𝑒 0𝑖 −      𝛽𝑖 𝛽 𝑗 𝑒 𝑖 𝑗
+                       2          𝑖           𝑖< 𝑗
+                                 ∑︁           ∑︁                            ∑︁
+                               ≥    𝛽𝑖 𝑒 0𝑖 −      𝛽𝑖 𝛽 𝑗 (𝑒 0𝑖 + 𝑒 0 𝑗 ) =    𝛽𝑖2 𝑒 0𝑖 > 0.
+                                     𝑖              𝑖< 𝑗                        𝑖
+
+    Suppose now that 𝑎 ≥ 2. Since 𝑎 ≤ 𝑟 and 𝑚 ≥ 5, we have 𝑟 ≥ 3 and therefore
+
+                                                   𝑎 + 2 ≤ 𝑚 − 1.                                        (6.2)
+
+For this sign pattern define
+
+                                              (𝑎 + 1)𝑟          𝑚
+                                 𝐹 (𝑎, 𝑟) =            =1+              .                                (6.3)
+                                              𝑎(𝑟 − 1)     𝑎(𝑚 − 1 − 𝑎)
+Since 𝑎(𝑚 − 1 − 𝑎) ≤ 𝐷 𝑚 ,
+                                                                     𝑎+1
+                                         𝑇 < 𝑇𝑚 ≤ 𝐹 (𝑎, 𝑟) ≤             .                               (6.4)
+                                                                     𝑎−1
+The last inequality is equivalent to 𝑟 ≥ 𝑎. Also
+
+                                                  (𝑟 − 1)𝜅 𝑎 (𝑇) < 1.                                    (6.5)
+
+If the positive part in 𝜅 𝑎 is inactive this is immediate. Otherwise the exact identity is
+
+                                                       𝑎(𝑟 − 1)
+                             1 − (𝑟 − 1)𝜅 𝑎 (𝑇) =               [𝐹 (𝑎, 𝑟) − 𝑇] > 0.
+                                                        𝑎+1
+    Use one positive point as the Gram root and partition the full Gram matrix as
+                                            
+                                       𝐾 𝐿
+                                 𝐶= T          ,     𝑆 = 𝐻 − 𝐿 T 𝐾 −1 𝐿,
+                                       𝐿 𝐻
+
+
+                                                            10
+Sharp negative type of finite Ptolemaic metrics                                              Unrefereed v1.0
+
+
+where 𝐾 is indexed by the remaining 𝑎 − 1 positive points. We do not assume that 𝐶 is positive definite.
+The anchor metric has 𝑎 points, so 𝐾 ≻ 0 follows from S 𝑝 (𝑚 − 1). Adding a single negative point uses
+𝑎 + 1 points and proves 𝑆𝑖𝑖 > 0. Adding a pair uses 𝑎 + 2 points. By (6.2) and (6.4), corollary 5.2
+applies to each such pair at the same exponent, giving
+                                                       √︁
+                                        𝑆𝑖 𝑗 ≥ −𝜅 𝑎 (𝑇) 𝑆𝑖𝑖 𝑆 𝑗 𝑗 .
+These pairwise Schur complements are precisely the corresponding principal two-by-two blocks of 𝑆,
+since they eliminate the same anchor block 𝐾.
+                                                                    √
+   Let 𝛽𝑖 > 0 be the negative coefficient magnitudes and put 𝑡𝑖 = 𝛽𝑖 𝑆𝑖𝑖 . Then
+                              ∑︁                ∑︁
+                     𝛽T 𝑆𝛽 ≥     𝑡𝑖2 − 2𝜅 𝑎 (𝑇)    𝑡𝑖 𝑡 𝑗
+                                    𝑖             𝑖< 𝑗
+                                                     ∑︁ 2           ∑︁
+                                                                        (𝑡𝑖 − 𝑡 𝑗 ) 2 > 0.
+                                
+                             = 1 − (𝑟 − 1)𝜅 𝑎 (𝑇)       𝑡𝑖 + 𝜅 𝑎 (𝑇)                                   (6.6)
+                                                         𝑖            𝑖< 𝑗
+
+If 𝛼 is the vector of positive coefficients excluding the root, completion of the square gives
+                           1
+                         − 𝑧 T 𝐸 𝑧 = (𝛼 − 𝐾 −1 𝐿 𝛽) T 𝐾 (𝛼 − 𝐾 −1 𝐿 𝛽) + 𝛽T 𝑆𝛽 > 0.            (6.7)
+                           2
+This closes the induction. Balanced patterns are included: when 𝑎 = 𝑟, the same strict subset bound
+(6.2) holds.                                                                                      □
+
+Endpoint part of theorem 1.1. For 𝑚 ≥ 6, 𝑝 𝑚 ≤ 1. Fix an 𝑚-point Ptolemaic metric and a zero-sum
+vector 𝑧. By proposition 6.1, 𝑧 T 𝑑 𝑝 𝑧 ≤ 0 for 0 < 𝑝 < 𝑝 𝑚 . This finite sum is continuous in 𝑝, so letting
+𝑝 ↑ 𝑝 𝑚 proves the endpoint inequality. The metric and vector were arbitrary. No inverse is taken at the
+endpoint, and no compactness assumption on the class of metrics is needed. The matching upper bound
+follows in the next section.                                                                               □
+
+
+7    Sharpness and the Lorentzian threshold
+Proposition 7.1 (Complete split witnesses). For every 𝑚 ≥ 3, there is a Ptolemaic metric on 𝑚 points
+that fails 𝑝-negative type for every 𝑝 > 𝑝 𝑚 .
+Proof. Let 𝑎, 𝑟 ≥ 1, 𝑟 ≥ 2, and 𝑎 + 𝑟 = 𝑚. The complete split graph consists of a clique of size 𝑎 and
+an independent set of size 𝑟, with every edge between the two parts present. On its vertex set, define
+the shortest-path metric CS(𝑎, 𝑟) to have all distinct distances one, except distances inside the 𝑟-point
+set, which are two. Triangle inequalities hold. For four distinct points, two points in each part give
+opposite-edge products 2, 1, 1; all other distributions give three equal products. Thus Ptolemy holds.
+Repeated-index inequalities are automatic.
+   Give every point in the 𝑎-part coefficient 1/𝑎 and every point in the 𝑟-part coefficient −1/𝑟. The
+negative-type inequality becomes
+                                         𝑎−1 𝑟 −1 𝑝
+                                                +       2 ≤ 1,                                      (7.1)
+                                           2𝑎       2𝑟
+which is equivalent to 2 𝑝 ≤ 𝐹 (𝑎, 𝑟). Choose 𝑎 to maximise the denominator 𝑎(𝑚 − 1 − 𝑎) in (6.3). Its
+integer maximum is 𝐷 𝑚 .
+   For 𝑚 = 2𝑘 + 1, the choice (𝑎, 𝑟) = (𝑘, 𝑘 + 1) gives 𝑇𝑚 = ((𝑘 + 1)/𝑘) 2 . For 𝑚 = 2𝑘, the choices
+(𝑘 − 1, 𝑘 + 1) and (𝑘, 𝑘) both give 𝑇𝑚 = (𝑘 + 1)/(𝑘 − 1). Hence (7.1) fails for every 𝑝 > 𝑝 𝑚 .        □
+
+   Proposition 7.1 and the endpoint argument complete theorem 1.1. The three-point equality 𝑃(3) = 2
+is also elementary: every three-point metric is a Euclidean triangle, and CS(1, 2) has exponent at
+most two. The equality 𝑃(4) = log2 3 is Baker et al. (2026, Theorem 7.16 and Corollary 7.17), while
+𝑃(5) = log2 (9/4) is Ercan (2026, Theorem 1.1). Appending these two results and the three-point
+observation proves (1.4). The entire argument for 𝑚 ≥ 6 is independent of these imported endpoint
+results.
+
+                                                         11
+Sharp negative type of finite Ptolemaic metrics                                          Unrefereed v1.0
+
+
+Seven-point example. For CS(3, 4), give the three clique vertices coefficient 1/3 and the four
+independent-set vertices coefficient −1/4. With 𝑇 = 2 𝑝 , direct expansion gives
+                                                        2 3
+                                           𝑧T 𝑑 𝑝 𝑧 =    + 𝑇 − 2.
+                                                        3 4
+This expression vanishes at 𝑇 = 16/9 and is positive for every larger 𝑇. It displays the sharpness of the
+first new threshold, 𝑃(7) = log2 (16/9), without a numerical eigenvalue calculation.
+
+7.1   The matrix formulation
+We recall the correspondence of Baker et al. (2026, Proposition 7.5) to identify exactly which Lorentzian
+statement follows. An admissible 𝑁 × 𝑁 matrix is symmetric, has zero diagonal and has positive
+off-diagonal entries. It satisfies the T 𝑝 -inequalities when, for every quartet of distinct indices, the
+three opposite-edge products raised to the power 1/𝑝 satisfy the triangle inequalities. Let 𝑞(𝑁) be the
+supremum of the parameters 𝑝 for which every such matrix has at most one positive eigenvalue.
+   Normalise one row of an admissible matrix to have off-diagonal entries one, and write it as
+
+                                                     0 1T
+                                                         
+                                               𝐴=           .
+                                                     1 𝐸
+
+The T 𝑝 -inequalities containing the distinguished index say that 𝑑𝑖 𝑗 = 𝑒 1/ 𝑝
+                                                                           𝑖 𝑗 is a metric. The remaining
+quartet inequalities say that 𝑑 is Ptolemaic. Conversely, augmenting 𝑑 𝑝 for a Ptolemaic metric gives
+exactly these quartet inequalities. The block congruence in section 4, which is valid for arbitrary
+symmetric 𝐶, shows that 𝐴 has at most one positive eigenvalue exactly when the root Gram matrix is
+positive semidefinite. Therefore 𝑞(𝑁) = 𝑃(𝑁 − 1). This recovers (1.5) and establishes corollary 1.2.
+
+7.2   Embedding and asymptotic consequences
+For 𝑚 ≥ 6 and 0 < 𝑝 < 𝑝 𝑚 , (2.2) gives an affinely independent isometric embedding of (𝑋, 𝑑 𝑝/2 ) into
+R𝑚−1 . At 𝑝 = 𝑝 𝑚 , an isometric embedding still exists but may lose affine independence. Strictness
+below the endpoint for the three smaller cardinalities also follows from strict descent (Li and Weston,
+2010); that theorem is not used in our cardinality induction.
+  The explicit formula gives
+                                                           4
+                                         lim 𝑚𝑃(𝑚) =           .
+                                        𝑚→∞              log 2
+Indeed 𝐷 𝑚 = 𝑚 2 /4 + 𝑂 (𝑚), so 𝑇𝑚 = 1 + 4/𝑚 + 𝑂 (𝑚 −2 ), and log(1 + 𝑥) = 𝑥 + 𝑂 (𝑥 2 ).
+
+
+8     Scope, equality and reproducibility
+The proof determines a universal exponent and supplies a family attaining it. It does not classify every
+metric attaining that exponent. Nor does it give a metric-independent positive spectral gap below the
+endpoint: rescaling the original distances alone changes Gram eigenvalues without changing negative
+type.
+   The analytic argument uses no numerical minimisation, bounded-ratio reduction or finite covering of
+metric space. The packing step optimises over a bounded polytope for each fixed length vector. The
+inverse step selects a largest magnitude from finitely many entries of one fixed inverse matrix. Endpoint
+passage is pointwise in the metric and coefficient vector.
+   The publication supplement contains the source derivation, the supplied audit and review, exact
+rational checks, separate symbolic reconstructions, numerical corroboration, a claim-to-check map and
+cryptographic manifests. The checks verify identities and explicit examples; they do not constitute a
+
+
+                                                        12
+Sharp negative type of finite Ptolemaic metrics                                            Unrefereed v1.0
+
+
+proof-assistant verification of the analytic induction. The source and publication metadata distinguish
+the external small-case results from the self-contained proof of theorem 1.1. No priority claim is made
+for the classical Gram, Schur-complement, inversion or circumcentre identities.
+   The current numerical summary uses null for empty samples and reports accepted counts for
+every statistic. It separates centred-Gram eigenvalues, eigenvalues restricted to 1⊥ , and the split-vector
+quadratic form. Optimiser convergence and feasibility are recorded separately. Historical files are
+retained unchanged, including superseded sentinel values and mixed statistic names; those fields are not
+current estimates.
+
+Research provenance. The argument was developed in an AI-assisted research workflow with
+iterative mathematical review and computational checks. This anonymous manuscript is prepared for
+publication by Evidence Press as an unrefereed research paper. The supplied review is preserved with a
+point-by-point revision response; its provenance does not establish external specialist endorsement. The
+release record distinguishes the completed manuscript from website publication, DOI registration and
+rights metadata, none of which is inferred from the proof checks.
+
+
+A     Two inverse-pairing statements that fail
+The proof avoids two superficially natural strengthenings. These examples also explain why the
+truncations in (3.2) and (4.8) are retained.
+
+A.1    Shortening a star edge can increase the inverse pairing
+Take a root, four leaves of raw length one and two leaves of raw length 99. The star distance between
+the long leaves is 198. Replace this distance alone by 𝑠 ∈ [197, 198] and leave all others unchanged.
+Every such array is a Ptolemaic metric. Triangles involving the altered edge require only 𝑠 ≤ 198
+and 𝑠 ≤ 200. A quartet containing both long leaves and two short leaves has opposite-edge products
+2𝑠, 10000, 10000; one containing both long leaves, the root and a short leaf has products 𝑠, 9900, 9900.
+All other inequalities are those of the original star.
+   At 𝑝 = 1/2, put
+     √                 √                                                   √
+𝑟 = 99, 𝑐 = 1 − 1/ 2, 𝑏 = (𝑟 − 9)/2, 𝐴0 = 1 + 3𝑐, 𝐷 (𝑠) = 2𝑟 − 𝑠/2, Δ = 𝐴0 𝐷 (𝑠) − 8𝑏 2 .
+
+The constant-on-parts block equations give, at either long leaf,
+                                     𝐴0𝑟 − 4𝑏                    𝐴0 − 4𝑏
+                              𝑢𝐵 =            > 0,        𝑣𝐵 =           < 0.
+                                        Δ                           Δ
+Here 0 < 𝑏 < 1/2, 𝐷 (𝑠) > 𝑟 and 𝐴0 > 1, so Δ > 𝑟 − 2 > 0. The contrast eigenvalues are also positive.
+Moreover 𝐴0𝑟 − 4𝑏 > 18 − 𝑟 > 0, while
+                                                     √       √
+                                  𝐴0 − 4𝑏 = 22 − 3/ 2 − 2 99 < 0.
+                                                            √
+For the last sign, squaring the positive sides reduces it to 2 > 185/132. Differentiating the inverse
+pairing with respect to the long-block row coefficient gives
+                                            d𝜇
+                                               = −2𝑢 𝐵 𝑣 𝐵 > 0.
+                                            d𝐷
+Shortening 𝑠 increases 𝐷 (𝑠) and therefore increases 𝜇. Numerically,
+
+                        𝜇 𝑠=198 ≈ 2.11231199339,          𝜇 𝑠=197 ≈ 2.11233712655.
+
+Thus entrywise comparison with an exact star does not imply the corresponding inequality between
+inverse pairings.
+
+                                                     13
+Sharp negative type of finite Ptolemaic metrics                                                  Unrefereed v1.0
+
+
+A.2    The untruncated bound is false even with two leaves
+Take a star with root lengths 1, 15 at 𝑝 = 1/4. Write 𝑟 = 151/4 and 𝑏 = (𝑟 − 1)/2. Its Gram matrix and
+inverse pairing are                         
+                                         1 𝑏             2𝑟 − 𝑏(1 + 𝑟)
+                                  𝐶=           ,    𝜇=                 .
+                                         𝑏 𝑟                𝑟 − 𝑏2
+Since 𝑟 < 246/125, exact arithmetic gives
+
+                       25[2𝑟 − 𝑏(1 + 𝑟)] − 36[𝑟 − 𝑏 2 ] = − 21 (7𝑟 2 + 8𝑟 − 43) > 0,
+
+so 𝜇 > 36/25. On the other hand 𝑇 = 21/4 < 119/100, and therefore
+                                                   4    400 36
+                                       𝑅2 (𝑇) =       <    <   .
+                                                  4−𝑇   281 25
+In decimals, 𝜇 ≈ 1.44167498 whereas 𝑅2 (𝑇) ≈ 1.42308600. The untruncated inverse-pairing bound
+fails. Neither example violates theorem 3.4.
+
+
+B     Where the strictness hypotheses enter
+The following table records the two inductions separately. It is a reading aid; each implication is proved
+in the cited location.
+
+Object or operation           Required positive-definiteness input        Source of the input
+Augmented inverse for 𝑛+1     Strict 𝑝-negative type of that metric       Explicit hypothesis S 𝑝 (𝑛 + 1) in theo-
+metric points                                                             rem 5.1
+Complement of two aug-        A regauged metric on 𝑛 − 1 points, or a     Lemmas 4.3 and 4.4 and S 𝑝 (𝑛 + 1)
+mented indices                direct 2 × 2 calculation
+Delete one augmented in-      A regauged metric on 𝑛 points               S 𝑝 (𝑛) inherited from S 𝑝 (𝑛 + 1)
+dex
+Renormalise a selected in-    A possibly inverted metric on 𝑛 + 1         Universal quantifier in S 𝑝 (𝑛 + 1)
+verse pair                    points
+One- and two-pole Schur       Metrics on 𝑎 + 1 and 𝑎 + 2 points           Strong induction: 𝑎 + 2 ≤ 𝑚 − 1
+blocks in an 𝑚-point metric
+Endpoint 𝑝 = 𝑝 𝑚              None for an inverse at the endpoint         Pointwise continuity after strict sub-
+                                                                          critical negative type is proved
+
+  For the conditional inverse induction the parameter check is 𝑇 ≤ 𝑛/(𝑛 − 2), which implies its
+lower-dimensional counterpart. For the cardinality induction, it follows from
+                                                       𝑎+1
+                               𝑇 < 𝑇𝑚 ≤ 𝐹 (𝑎, 𝑟) ≤         ,          𝑛 = 𝑎 + 1.
+                                                       𝑎−1
+The two uses of induction therefore do not require an embedding of the full 𝑚-point metric before (6.7)
+proves it.
+
+
+
+
+                                                      14
+Sharp negative type of finite Ptolemaic metrics                                                  Unrefereed v1.0
+
+
+References
+Baker, M., Huh, J., Kummer, M., & Lorscheid, O. (2026). Lorentzian polynomials and matroids over triangular
+  hyperfields 2: Analytic aspects (Version 2) [Preprint]. arXiv. https://arxiv.org/abs/2607.15375v2
+
+Ercan, E. (2026). Ptolemaic negative type and the values 𝑞(6) and 𝑞(7) (Version 1) [Preprint]. arXiv. https:
+  //arxiv.org/abs/2608.20606v1
+
+Fiedler, M. (2011). Matrices and graphs in geometry. Cambridge University Press. https://doi.org/10.1017/
+   CBO9780511973611
+
+Haynsworth, E. V. (1968). Determination of the inertia of a partitioned Hermitian matrix. Linear Algebra and its
+  Applications, 1(1), 73–81. https://doi.org/10.1016/0024-3795(68)90050-5
+
+Korea Superintelligence Labs (2026). Sharp constants for Ptolemaic negative type: the p-anchor ladder, an
+  impossibility window above 𝑞 = 1, and Bernstein cube inequalities on both sides of 𝑞 = 1 (Version 3, 7
+  September) [Preprint]. Ideosphere Machina Mathematica. https://ideosphere.ai/papers/ptolemaic-negtype-v3.
+  pdf
+
+Li, H., & Weston, A. (2010). Strict p-negative type of a metric space. Positivity, 14, 529–545. https://doi.org/10.
+   1007/s11117-009-0035-2
+
+Sánchez, S. (2012). On the supremal p-negative type of finite metric spaces. Journal of Mathematical Analysis
+  and Applications, 389(1), 98–107. https://doi.org/10.1016/j.jmaa.2011.11.041
+
+Schoenberg, I. J. (1938). Metric spaces and positive definite functions. Transactions of the American Mathematical
+  Society, 44(3), 522–536. https://doi.org/10.1090/S0002-9947-1938-1501980-0
+
+
+
+
+                                                       15
+

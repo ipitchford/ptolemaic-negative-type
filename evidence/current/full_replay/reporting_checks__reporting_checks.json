@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "all_saved_near_extremal_arrays_recomputed_with_separate_statistics",
+    "all_saved_optimisation_attempts_recomputed_and_statuses_reconciled",
+    "summary_preserves_missingness_and_does_not_recover_unrecorded_historical_statistics",
+    "three_missingness_and_count_mutations_rejected"
+  ],
+  "formal_proof_assistant_used": false,
+  "near_extremal_arrays": 2400,
+  "negative_controls_rejected": 3,
+  "numerical_recomputation_tolerance": "5e-11*(1+abs(a)+abs(b))",
+  "optimisation_attempts": 160,
+  "scope": "report integrity and finite numerical recomputation; no universal theorem validation",
+  "status": "PASS"
+}

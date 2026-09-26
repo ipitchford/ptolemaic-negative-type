@@ -1,0 +1,138 @@
+{
+  "centred_eigenvalue_caveat": "The centred Gram matrix has an exact structural zero; its full minimum is not a positive stability margin.",
+  "certified_error_bounds": false,
+  "design": "supplied near_extremal.py with seed 5; separate measurements and full-precision samples",
+  "groups": [
+    {
+      "T": 1.44,
+      "accepted": 600,
+      "attempted": 600,
+      "exponent": 0.5260688116675876,
+      "m": 11,
+      "numerical_exceptions": 0,
+      "rejected": 0,
+      "statistics": {
+        "centred_gram_min_eigenvalue": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": -3.929148673087468e-16
+        },
+        "split_vector_gap": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 2.295174789166988e-05
+        },
+        "split_vector_rayleigh_quotient": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 6.259567606819057e-05
+        },
+        "zero_sum_gram_min_eigenvalue": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 6.259550965292959e-05
+        }
+      }
+    },
+    {
+      "T": 1.4,
+      "accepted": 600,
+      "attempted": 600,
+      "exponent": 0.48542682717024166,
+      "m": 12,
+      "numerical_exceptions": 0,
+      "rejected": 0,
+      "statistics": {
+        "centred_gram_min_eigenvalue": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": -5.509915440571334e-16
+        },
+        "split_vector_gap": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 3.17121893068237e-05
+        },
+        "split_vector_rayleigh_quotient": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 9.249388547823576e-05
+        },
+        "zero_sum_gram_min_eigenvalue": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 9.249363594365789e-05
+        }
+      }
+    },
+    {
+      "T": 1.3611111111111112,
+      "accepted": 600,
+      "attempted": 600,
+      "exponent": 0.4447848426728959,
+      "m": 13,
+      "numerical_exceptions": 0,
+      "rejected": 0,
+      "statistics": {
+        "centred_gram_min_eigenvalue": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": -6.357761539454998e-16
+        },
+        "split_vector_gap": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 3.4349206642373005e-05
+        },
+        "split_vector_rayleigh_quotient": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 0.00011097435992151279
+        },
+        "zero_sum_gram_min_eigenvalue": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 0.0001109737439395353
+        }
+      }
+    },
+    {
+      "T": 1.3333333333333333,
+      "accepted": 600,
+      "attempted": 600,
+      "exponent": 0.41503749927884376,
+      "m": 14,
+      "numerical_exceptions": 0,
+      "rejected": 0,
+      "statistics": {
+        "centred_gram_min_eigenvalue": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": -5.555451931815725e-16
+        },
+        "split_vector_gap": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 0.00012517196803641002
+        },
+        "split_vector_rayleigh_quotient": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 0.00042916103326769156
+        },
+        "zero_sum_gram_min_eigenvalue": {
+          "accepted_samples": 600,
+          "status": "observed",
+          "value": 0.00042915666250920026
+        }
+      }
+    }
+  ],
+  "rayleigh_definition": "split_vector_gap/(z^T z); not substituted for a minimum eigenvalue",
+  "schema_version": "1.0",
+  "scope": "numerical corroboration only; sampled unscaled metrics near split witnesses",
+  "seed": 5,
+  "split_gap_definition": "-z^T E z/2 with z=(1/a,...,1/a,-1/r,...,-1/r); not an eigenvalue",
+  "trials": "near_extremal_trials.jsonl",
+  "zero_sum_eigenvalue_definition": "lambda_min(-Q^T E Q/2), Q^T Q=I and Q^T 1=0; ordinary Euclidean orthonormal basis"
+}

@@ -1,0 +1,85 @@
+{
+ "h_second_derivative_formula_residual_at_sample": 0.0,
+ "max(K - delta t^-beta) over grid": 0.0,
+ "max(1-(1-p)z^p-p z^(p-1))": -9.80067138556251e-11,
+ "M1_counterexample": {
+  "star_ptolemaic": true,
+  "shortened_ptolemaic": true,
+  "M_star": 2.1123119933926358,
+  "M_short": 2.1123371265531805,
+  "violates_M1": true
+ },
+ "M2_counterexample": {
+  "M_star": 1.4416749837666787,
+  "untruncated_R_2": 1.42308599874084,
+  "exceeds": true,
+  "truncated_bound_2_holds": true
+ },
+ "(6)_residual": "0",
+ "lemma4_random_test": {
+  "m=4": {
+   "metrics": 1039,
+   "min(normalised entry + k_n)": 0.04863751307729869
+  },
+  "m=5": {
+   "metrics": 842,
+   "min(normalised entry + k_n)": 0.07201556989337489
+  },
+  "m=6": {
+   "metrics": 769,
+   "min(normalised entry + k_n)": 0.0562878865575969
+  },
+  "m=7": {
+   "metrics": 750,
+   "min(normalised entry + k_n)": 0.05331224542030023
+  },
+  "m=8": {
+   "metrics": 750,
+   "min(normalised entry + k_n)": 0.039944125990618286
+  }
+ },
+ "deletion_formula_max_error": 1.5543122344752192e-15,
+ "packing_LP_max(sum w - L_n)": -8.279673268329901e-06,
+ "final_theorem_near_extremal": {
+  "m=11": {
+   "T_m": 1.44,
+   "a,r": [
+    5,
+    6
+   ],
+   "perturbed_Ptolemaic_metrics": 0,
+   "min_eig_centred_Gram_at_P(m)": 1000000000.0,
+   "CS_form_at_q+0.001 (should be >0)": 0.0008320649550968631
+  },
+  "m=12": {
+   "T_m": 1.4,
+   "a,r": [
+    5,
+    7
+   ],
+   "perturbed_Ptolemaic_metrics": 0,
+   "min_eig_centred_Gram_at_P(m)": 1000000000.0,
+   "CS_form_at_q+0.001 (should be >0)": 0.0008320649550968701
+  },
+  "m=13": {
+   "T_m": 1.3611111111111112,
+   "a,r": [
+    6,
+    7
+   ],
+   "perturbed_Ptolemaic_metrics": 0,
+   "min_eig_centred_Gram_at_P(m)": 1000000000.0,
+   "CS_form_at_q+0.001 (should be >0)": 0.0008089520396775823
+  },
+  "m=14": {
+   "T_m": 1.3333333333333333,
+   "a,r": [
+    6,
+    8
+   ],
+   "perturbed_Ptolemaic_metrics": 0,
+   "min_eig_centred_Gram_at_P(m)": 1000000000.0,
+   "CS_form_at_q+0.001 (should be >0)": 0.0008089520396774783
+  }
+ }
+}

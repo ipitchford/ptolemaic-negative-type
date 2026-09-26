@@ -1,0 +1,58 @@
+[
+  {
+    "job": "core_replay",
+    "exit_code": 0,
+    "elapsed_seconds": 4.593,
+    "outputs": {
+      "checks/replay_results.json": {
+        "sha256": "0541d26db13a268258d58c07978bb859551766a744ff2665791d11b785f48933",
+        "matches_supplied_bytes": true
+      },
+      "checks/exact_results.json": {
+        "sha256": "619cd5fcf1bc83092e577fa2f3268e5bc22a5c289e2571e41010eb657606201f",
+        "matches_supplied_bytes": true
+      },
+      "checks/symbolic_results.json": {
+        "sha256": "aed2ddbc0ddf600fbe0a62a1ca966a80c3b500b51098ecd99bef9eefcbe43494",
+        "matches_supplied_bytes": true
+      },
+      "checks/numerical_results.json": {
+        "sha256": "a7dbe67c17be79f0f3653369ca15ab8f37b04f688a0ab15e5228f9576aa2ec76",
+        "matches_supplied_bytes": true
+      }
+    }
+  },
+  {
+    "job": "audit_allsize",
+    "exit_code": 0,
+    "elapsed_seconds": 6.58,
+    "outputs": {
+      "audit_allsize.json": {
+        "sha256": "bc1674239730c3bea8f9029c8a04c67c6768e06b9f9f09184a90968008af25c8",
+        "matches_supplied_bytes": false
+      }
+    }
+  },
+  {
+    "job": "near_extremal",
+    "exit_code": 0,
+    "elapsed_seconds": 2.921,
+    "outputs": {
+      "near_extremal.json": {
+        "sha256": "b1981c14d6cd863dcbb763cda99595af1792727fbb87dcf2f9c92455ee35c7aa",
+        "matches_supplied_bytes": true
+      }
+    }
+  },
+  {
+    "job": "adversarial_lemma4",
+    "exit_code": 0,
+    "elapsed_seconds": 13.321,
+    "outputs": {
+      "adversarial_lemma4.json": {
+        "sha256": "01534dd48be572e85f434c4f13930de9b76558a5c1c26d43e680d585837d0d83",
+        "matches_supplied_bytes": false
+      }
+    }
+  }
+]

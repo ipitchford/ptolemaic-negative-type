@@ -1,0 +1,49 @@
+{
+  "complete_all_size_formula_uses_existing_small_cases": [
+    3,
+    4,
+    5
+  ],
+  "date": "2026-09-25",
+  "endpoint_method": "continuity for each fixed metric and coefficient vector",
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "equality_classification_complete": false,
+  "false_auxiliary_claims_refuted": [
+    "global mass monotonicity",
+    "untruncated all-exponent exact-star mass bound"
+  ],
+  "formal_proof_assistant_used": false,
+  "imported_for_new_m_ge_6_proof": [],
+  "independent_expert_review_completed": false,
+  "new_pivots": [
+    "exact-star nonnegative packing",
+    "normalised inverse-triangle induction",
+    "strict smaller-cardinality bootstrap"
+  ],
+  "new_range": "all integers m >= 6",
+  "not_used": [
+    "Ercan Bernstein certificate",
+    "balanced coefficient transport",
+    "global polynomial relaxation",
+    "radial inverse positivity",
+    "global mass monotonicity"
+  ],
+  "priority_audit_completed": false,
+  "public_submission_made": false,
+  "standard_mathematics": [
+    "Schur complements and inertia additivity",
+    "weighted AM-GM",
+    "oppositely ordered Chebyshev inequality",
+    "existence of a vertex optimum in a compact polytope",
+    "Laplace integral for a fractional power"
+  ],
+  "status": "complete_analytic_proof_draft_awaiting_independent_mathematical_review",
+  "strict_below_endpoint": true,
+  "threshold": "log2(1 + m/floor((m-1)^2/4))"
+}

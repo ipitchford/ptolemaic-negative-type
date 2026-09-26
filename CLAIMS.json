@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Sharp negative type of finite Ptolemaic metrics",
+  "scholarlyCreator": "Anonymous",
+  "publisher": "Evidence Press",
+  "manuscriptVersion": "1.0",
+  "plannedPublicReleaseVersion": "1.0.0-candidate",
+  "status": "unrefereed-candidate",
+  "claimBasis": "analytic manuscript with supporting exact and symbolic identity checks; not SAT or proof-assistant certification",
+  "firstNewCardinalityRelativeToCitedPredecessor": 7,
+  "priorityStatus": "bounded 26 September publication-intake comparison completed; KSL attribution read back in working public source; final rendered-manuscript freeze checks remain separate; exhaustive priority not established",
+  "claims": [
+    {
+      "id": "PTOLEMY-UNIVERSAL",
+      "statement": "For every integer m >= 6, every m-point Ptolemaic metric has p_m-negative type, where p_m = log_2(1 + m/floor((m-1)^2/4)), and strict p-negative type for every 0 < p < p_m. An explicit m-point Ptolemaic metric fails p-negative type for every p > p_m.",
+      "definitions": "Ptolemaic means d(x,y)d(z,w) <= d(x,z)d(y,w)+d(x,w)d(y,z) for all quadruples. Negative type means z^T d^p z <= 0 for every real vector z with sum z_i = 0; strict means < 0 for nonzero such z.",
+      "proofLocations": ["paper/ptolemaic.tex: thm:main", "paper/ptolemaic.tex: prop:strict", "paper/ptolemaic.tex: prop:sharp"],
+      "proofDependencies": ["PTOLEMY-PACKING", "PTOLEMY-INVERSE", "universal strictness of smaller Ptolemaic metrics at the same exponent", "pointwise endpoint continuity"],
+      "externalEndpointDependencies": [],
+      "checkMap": "review/CLAIM_CHECK_MAP.csv",
+      "limitations": ["The universal quantifiers are justified by the analytic argument, not by a finite replay.", "P(6)=1 was already in the cited predecessor; this proof independently recovers it."]
+    },
+    {
+      "id": "PTOLEMY-PACKING",
+      "statement": "For every n >= 1, 0 < p < 1 and positive length vector ell, put T=2^p, r_i=ell_i^p, R_ii=r_i, R_ij=(r_i+r_j-(ell_i+ell_j)^p)/2 and B=R diag(r)^(-1). Every w >= 0 with Bw <= 1 satisfies sum_i w_i <= max(2, 2n/[2n-(n-1)T]). Equal lengths attain the bound when the rational term is at least 2.",
+      "proofLocations": ["paper/ptolemaic.tex: lem:scalar", "paper/ptolemaic.tex: lem:fullsupport", "paper/ptolemaic.tex: thm:packing"],
+      "proofDependencies": ["supporting-power inequality from strict logarithmic concavity", "opposite-order Chebyshev identity", "compact-polytope vertex and support induction"],
+      "supportingChecks": ["evidence/core/verify_symbolic.py", "evidence/core/verify_exact.py"],
+      "limitations": ["No optimality claim for the constant 2 in the complementary parameter regime.", "No assertion that either inverse vector R^(-1)1 or R^(-1)r is entrywise nonnegative.", "Method priority remains bounded by the recorded searches."]
+    },
+    {
+      "id": "PTOLEMY-INVERSE",
+      "statement": "Fix 0 < p < 1, T=2^p and n >= 2. Assume every Ptolemaic metric on at most n+1 points has strict p-negative type. For n >= 3 assume T <= n/(n-2). Then every normalized off-diagonal inverse entry of an augmented powered-distance matrix is at least -max(0,[(n-1)T-n]/n). For n=2 the additional parameter restriction is unnecessary.",
+      "proofLocations": ["paper/ptolemaic.tex: thm:inverse-bound", "paper/ptolemaic.tex: lem:inversion", "paper/ptolemaic.tex: lem:pair-inertia", "paper/ptolemaic.tex: app:hypotheses"],
+      "hypothesisWarning": "Universal strictness includes newly inverted metrics, not merely subsets of one fixed metric. The outer m-point argument invokes this result only with n+1=a+2 <= m-1.",
+      "supportingChecks": ["evidence/core/verify_exact.py", "evidence/core/verify_symbolic.py", "scripts/verify_manuscript.py"],
+      "limitations": ["This conditional theorem must not be quoted without its strictness and parameter hypotheses.", "Finite sign-case and algebra checks do not independently certify the induction."]
+    },
+    {
+      "id": "PTOLEMY-ALL-SIZES",
+      "statement": "Combining PTOLEMY-UNIVERSAL with P(3)=2, P(4)=log_2(3) and P(5)=log_2(9/4) gives P(2k+1)=2 log_2((k+1)/k) for k>=1 and P(2k)=log_2((k+1)/(k-1)) for k>=2. The rank-two uniform Lorentzian threshold is q(n)=P(n-1), as in the cited correspondence.",
+      "proofLocations": ["paper/ptolemaic.tex: cor:all", "paper/ptolemaic.tex: eq:parity", "paper/ptolemaic.tex: eq:q-formula"],
+      "externalEndpointDependencies": ["Baker-Huh-Kummer-Lorscheid, arXiv:2607.15375v2, Theorem 7.16 and Corollary 7.17: P(4)", "Ercan, arXiv:2608.20606v1, Theorem 1.1: P(5)"],
+      "externalCorrespondence": "Baker-Huh-Kummer-Lorscheid, Proposition 7.5; the manuscript also displays the finite block argument",
+      "limitations": ["The external five-point Bernstein certificate was not replayed in the supplied package.", "Not a resolution of every matroid threshold."]
+    },
+    {
+      "id": "PTOLEMY-WITNESSES",
+      "statement": "Complete split metrics CS(a,r), with clique and cross distances 1 and independent-part distances 2, give the upper threshold T=(a+1)r/[a(r-1)]. Maximizing a(m-1-a) gives floor((m-1)^2/4). For CS(3,4), coefficients 1/3 and -1/4 give z^T d^p z = 2/3 + (3/4)2^p - 2, vanishing at 2^p=16/9.",
+      "proofLocations": ["paper/ptolemaic.tex: prop:sharp", "paper/ptolemaic.tex: Section 7, Seven-point example"],
+      "supportingChecks": ["evidence/core/verify_exact.py", "scripts/verify_revision.py"],
+      "limitations": ["An attaining family, not a classification of all extremizers.", "Complete split objects and antecedent sharpness calculations require attribution; they are not claimed as newly invented objects."]
+    },
+    {
+      "id": "PTOLEMY-CONSEQUENCES",
+      "statement": "For m>=6 and 0<p<p_m, (X,d^(p/2)) embeds isometrically as an affinely independent set in R^(m-1); endpoint embeddings can lose affine independence. The formula implies lim_{m->infinity} m P(m)=4/log(2).",
+      "proofLocations": ["paper/ptolemaic.tex: eq:gram-identity", "paper/ptolemaic.tex: Section 7.2"],
+      "limitations": ["Classical Gram/embedding correspondence is attributed, not claimed as novel.", "No metric-independent positive spectral gap without a normalization."]
+    },
+    {
+      "id": "PTOLEMY-NUMERICS",
+      "statement": "The supplied current reporting layer retains 2400 near-extremal arrays and 160 optimization attempts; separates centered eigenvalues, zero-sum restricted eigenvalues, split gaps and Rayleigh quotients; and distinguishes convergence from feasibility.",
+      "evidenceLocations": ["evidence/current/CURRENT_NUMERICAL_SUMMARY.json", "evidence/current/numerics/near_extremal_trials.jsonl", "evidence/current/numerics/adversarial_trials.jsonl", "evidence/current/reporting_checks.json"],
+      "limitations": ["Bounded numerical corroboration and reporting checks only.", "Empty original samples and unrecoverable historical components remain null.", "Small positive floating deficits within feasibility tolerance are not certified counterexamples."]
+    }
+  ],
+  "notClaimed": ["formal proof-assistant verification", "SAT certification of the universal theorem", "authenticated external specialist peer review", "independent reimplementation", "exhaustive priority", "full equality classification", "calibrated correctness probability"],
+  "publicIdentifiers": {
+    "repository": "https://github.com/ipitchford/ptolemaic-negative-type",
+    "repositoryStatus": "planned-not-asserted-public",
+    "plannedTag": "v1.0.0-candidate",
+    "reservedVersionDoi": "10.5281/zenodo.22983333",
+    "reservedConceptDoi": "10.5281/zenodo.22983332",
+    "zenodoStatusAtDocumentation": "unsubmitted-draft-not-published",
+    "canonicalUrl": "https://evidencepress.org/releases/ptolemaic-negative-type/",
+    "canonicalUrlStatus": "planned-not-read-back",
+    "plannedReleaseDate": "2026-09-26",
+    "publicationDate": null
+  }
+}

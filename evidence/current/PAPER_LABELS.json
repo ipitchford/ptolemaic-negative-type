@@ -1,0 +1,290 @@
+{
+  "app:false": {
+    "number": "A",
+    "page": "13"
+  },
+  "app:hypotheses": {
+    "number": "B",
+    "page": "14"
+  },
+  "cor:all": {
+    "number": "1.2",
+    "page": "2"
+  },
+  "cor:anchors": {
+    "number": "5.2",
+    "page": "9"
+  },
+  "eq:anchor-bound": {
+    "number": "5.10",
+    "page": "9"
+  },
+  "eq:aug-inertia": {
+    "number": "4.4",
+    "page": "6"
+  },
+  "eq:aug-inverse": {
+    "number": "4.5",
+    "page": "6"
+  },
+  "eq:augmented": {
+    "number": "4.3",
+    "page": "6"
+  },
+  "eq:b-function": {
+    "number": "3.4",
+    "page": "4"
+  },
+  "eq:chebyshev": {
+    "number": "3.9",
+    "page": "5"
+  },
+  "eq:compatibility": {
+    "number": "5.7",
+    "page": "9"
+  },
+  "eq:compatibility-factor": {
+    "number": "5.8",
+    "page": "9"
+  },
+  "eq:completion": {
+    "number": "6.7",
+    "page": "11"
+  },
+  "eq:copositive": {
+    "number": "6.6",
+    "page": "11"
+  },
+  "eq:copositive-margin": {
+    "number": "6.5",
+    "page": "10"
+  },
+  "eq:cs": {
+    "number": "4.2",
+    "page": "6"
+  },
+  "eq:cut-interval": {
+    "number": "2.3",
+    "page": "3"
+  },
+  "eq:denominator": {
+    "number": "5.5",
+    "page": "9"
+  },
+  "eq:gamma-step": {
+    "number": "5.6",
+    "page": "9"
+  },
+  "eq:good-sign": {
+    "number": "4.9",
+    "page": "7"
+  },
+  "eq:gram": {
+    "number": "2.1",
+    "page": "3"
+  },
+  "eq:gram-identity": {
+    "number": "2.2",
+    "page": "3"
+  },
+  "eq:h-prime": {
+    "number": "3.6",
+    "page": "4"
+  },
+  "eq:h-second": {
+    "number": "3.7",
+    "page": "4"
+  },
+  "eq:inverse-bound": {
+    "number": "5.2",
+    "page": "8"
+  },
+  "eq:inverse-deletion": {
+    "number": "5.3",
+    "page": "9"
+  },
+  "eq:inverse-quantities": {
+    "number": "4.1",
+    "page": "6"
+  },
+  "eq:inverse-range": {
+    "number": "5.1",
+    "page": "8"
+  },
+  "eq:kn": {
+    "number": "4.8",
+    "page": "7"
+  },
+  "eq:metric-inversion": {
+    "number": "4.10",
+    "page": "7"
+  },
+  "eq:negative-type": {
+    "number": "1.2",
+    "page": "1"
+  },
+  "eq:packing": {
+    "number": "3.10",
+    "page": "5"
+  },
+  "eq:packing-constants": {
+    "number": "3.2",
+    "page": "4"
+  },
+  "eq:parameter-chain": {
+    "number": "6.4",
+    "page": "10"
+  },
+  "eq:parameters": {
+    "number": "3.1",
+    "page": "3"
+  },
+  "eq:parity": {
+    "number": "1.4",
+    "page": "2"
+  },
+  "eq:partial-correlation": {
+    "number": "5.4",
+    "page": "9"
+  },
+  "eq:pattern-threshold": {
+    "number": "6.3",
+    "page": "10"
+  },
+  "eq:ptolemy": {
+    "number": "1.1",
+    "page": "1"
+  },
+  "eq:q-formula": {
+    "number": "1.5",
+    "page": "2"
+  },
+  "eq:rho": {
+    "number": "4.6",
+    "page": "6"
+  },
+  "eq:rho-mu": {
+    "number": "4.7",
+    "page": "7"
+  },
+  "eq:row-sum": {
+    "number": "3.8",
+    "page": "5"
+  },
+  "eq:scalar": {
+    "number": "3.5",
+    "page": "4"
+  },
+  "eq:schur-correlation": {
+    "number": "5.9",
+    "page": "9"
+  },
+  "eq:size-guard": {
+    "number": "6.2",
+    "page": "10"
+  },
+  "eq:split-inequality": {
+    "number": "7.1",
+    "page": "11"
+  },
+  "eq:star": {
+    "number": "3.3",
+    "page": "4"
+  },
+  "eq:strict-range": {
+    "number": "6.1",
+    "page": "10"
+  },
+  "eq:threshold": {
+    "number": "1.3",
+    "page": "1"
+  },
+  "lem:four": {
+    "number": "2.1",
+    "page": "3"
+  },
+  "lem:fullsupport": {
+    "number": "3.3",
+    "page": "5"
+  },
+  "lem:inversion": {
+    "number": "4.3",
+    "page": "7"
+  },
+  "lem:nonnegative": {
+    "number": "4.1",
+    "page": "6"
+  },
+  "lem:pair-inertia": {
+    "number": "4.4",
+    "page": "8"
+  },
+  "lem:scalar": {
+    "number": "3.2",
+    "page": "4"
+  },
+  "prop:kernel": {
+    "number": "3.1",
+    "page": "4"
+  },
+  "prop:sharp": {
+    "number": "7.1",
+    "page": "11"
+  },
+  "prop:strict": {
+    "number": "6.1",
+    "page": "10"
+  },
+  "rem:classical": {
+    "number": "4.2",
+    "page": "7"
+  },
+  "rem:packing-sharp": {
+    "number": "3.5",
+    "page": "5"
+  },
+  "sec:cardinality": {
+    "number": "6",
+    "page": "10"
+  },
+  "sec:correlation": {
+    "number": "5",
+    "page": "8"
+  },
+  "sec:gram": {
+    "number": "2",
+    "page": "3"
+  },
+  "sec:intro": {
+    "number": "1",
+    "page": "1"
+  },
+  "sec:inverse": {
+    "number": "4",
+    "page": "6"
+  },
+  "sec:packing": {
+    "number": "3",
+    "page": "3"
+  },
+  "sec:scope": {
+    "number": "8",
+    "page": "12"
+  },
+  "sec:sharp": {
+    "number": "7",
+    "page": "11"
+  },
+  "thm:inverse-bound": {
+    "number": "5.1",
+    "page": "8"
+  },
+  "thm:main": {
+    "number": "1.1",
+    "page": "2"
+  },
+  "thm:packing": {
+    "number": "3.4",
+    "page": "5"
+  }
+}

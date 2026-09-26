@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/source-copy/scripts/verify_reporting.py", line 92, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/source-copy/scripts/verify_reporting.py", line 43, in main
+    close(gap,row['split_vector_gap']);close(gap/float(z@z),row['split_vector_rayleigh_quotient'])
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/source-copy/scripts/verify_reporting.py", line 20, in close
+    require(abs(a-b)<=5e-11*(1+abs(a)+abs(b)),'numerical measurement mismatch')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/source-copy/scripts/verify_reporting.py", line 16, in require
+    if not c:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: numerical measurement mismatch

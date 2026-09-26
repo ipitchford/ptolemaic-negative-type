@@ -1,0 +1,6 @@
+{'points': 4, 'T': 1.998614185980905, 'k_n': 0.33240945732060334, 'feasible_runs': 40, 'max deficit (>0 would refute)': 3.2456259901891826e-12}
+{'points': 5, 'T': 1.998614185980905, 'k_n': 0.4989606394856787, 'feasible_runs': 40, 'max deficit (>0 would refute)': 4.424238753131249e-14}
+{'points': 6, 'T': 1.6655118216507543, 'k_n': 0.33240945732060345, 'feasible_runs': 40, 'max deficit (>0 would refute)': 2.220446049250313e-16}
+{'points': 7, 'T': 1.4989606394856787, 'k_n': 0.24913386623806563, 'feasible_runs': 40, 'max deficit (>0 would refute)': -1.6653345369377348e-16}
+
+--- STDERR ---

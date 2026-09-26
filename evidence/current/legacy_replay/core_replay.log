@@ -1,0 +1,12 @@
+{
+  "formal_proof_assistant_used": false,
+  "input_hashes_verified": 17,
+  "reports_byte_identical": {
+    "exact_results.json": true,
+    "numerical_results.json": true,
+    "symbolic_results.json": true
+  },
+  "scripts_returned_success": 3
+}
+
+--- STDERR ---

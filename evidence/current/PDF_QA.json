@@ -1,0 +1,58 @@
+{
+  "documents": [
+    {
+      "metadata": {
+        "author": "",
+        "creationDate": "D:20260925000000Z",
+        "creator": "LaTeX with hyperref",
+        "encryption": null,
+        "format": "PDF 1.7",
+        "keywords": "Ptolemaic metric, negative type, Schoenberg matrix, metric inversion, Lorentzian signature",
+        "modDate": "D:20260925000000Z",
+        "producer": "pdfTeX-1.40.26",
+        "subject": "Evidence Press publication manuscript, version 1.0; unrefereed analytic proof and evidence supplement",
+        "title": "Sharp negative type of finite Ptolemaic metrics",
+        "trapped": ""
+      },
+      "nonempty_text_pages": 15,
+      "out_of_page_words": [],
+      "pages": 15,
+      "path": "paper/ptolemaic.pdf",
+      "replacement_characters": 0,
+      "sha256": "6462410728018721e5894c9580d910f066a718b857bac673579a4b8c7b0a0cfc",
+      "visual_inspection": "completed: every page rendered; contact-sheet inspection and full-page inspection of key pages; no clipping, overlaps or missing glyphs seen"
+    },
+    {
+      "metadata": {
+        "author": "",
+        "creationDate": "D:20260925000000Z",
+        "creator": "LaTeX via pandoc",
+        "encryption": null,
+        "format": "PDF 1.5",
+        "keywords": "",
+        "modDate": "",
+        "producer": "xdvipdfmx (20240305)",
+        "subject": "",
+        "title": "",
+        "trapped": ""
+      },
+      "nonempty_text_pages": 2,
+      "out_of_page_words": [],
+      "pages": 2,
+      "path": "review/RESPONSE_TO_REVIEW.pdf",
+      "replacement_characters": 0,
+      "sha256": "59da248417d022b75da4649a291727fd18421aa91342f59414f401e4df1c9e6f",
+      "visual_inspection": "completed: every page rendered; contact-sheet inspection and full-page inspection of key pages; no clipping, overlaps or missing glyphs seen"
+    }
+  ],
+  "latex_warnings_checked": [
+    "undefined references",
+    "undefined citations",
+    "Overfull hbox",
+    "Overfull vbox",
+    "Missing character"
+  ],
+  "renderer": "PyMuPDF 1.26.7",
+  "scope": "rendering, text extraction and layout checks; no mathematical certification",
+  "status": "PASS"
+}

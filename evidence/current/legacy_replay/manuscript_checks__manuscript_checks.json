@@ -1,0 +1,35 @@
+{
+  "check_count": 13,
+  "checks": [
+    "square_completion_without_full_positivity",
+    "inertia_block_congruence",
+    "augmented_inverse_reconstruction_dimensions_1_to_6",
+    "classical_distance_inverse_pairing_dimensions_1_to_6",
+    "gram_zero_sum_identity_dimensions_1_to_6",
+    "supporting_power_second_derivative",
+    "dimension_compatibility_untruncated_branch",
+    "inverse_deletion_sign_and_triangle_comparison",
+    "copositive_gap_with_variance_remainder",
+    "support_threshold_margin_and_parameter_guard",
+    "proper_subset_guards_finite_sanity_check_5_to_300",
+    "both_parity_formulas",
+    "eleven_point_endpoint_exact_gram_rank_and_null_vector"
+  ],
+  "eleven_point_gram_eigenvalues": {
+    "0": 2,
+    "1/2": 4,
+    "18/25": 5
+  },
+  "formal_proof_assistant_used": false,
+  "inverse_dimensions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "proper_subset_cases": 22200,
+  "scope": "Exact algebraic identities and explicit finite sanity checks; not a formal proof of universal lemmas.",
+  "status": "PASS"
+}

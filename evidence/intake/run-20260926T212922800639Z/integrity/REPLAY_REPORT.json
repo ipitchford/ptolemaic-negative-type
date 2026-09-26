@@ -1,0 +1,10 @@
+{
+  "formal_proof_assistant_used": false,
+  "jobs": [],
+  "manifest_files_verified": 130,
+  "manifest_files_verified_after_replay": 130,
+  "mode": "integrity",
+  "scope": "Specified algebraic checks, report integrity and bounded numerical corroboration; not universal proof validation.",
+  "status": "PASS",
+  "version": "1.0"
+}

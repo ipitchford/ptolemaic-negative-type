@@ -1,0 +1,23 @@
+{
+  "allsize_proof_audit.zip": {
+    "bytes": 100584,
+    "sha256": "944b88cd760713c802a5690802633f8087385dc8332a2cedfcb5356b653c4d09"
+  },
+  "allsize_publication_gate.zip": {
+    "bytes": 152658,
+    "sha256": "6c60c5b6cafc0d1035de54505eb51eda79297caa9105b7c521dfb042b9aec18e"
+  },
+  "ptolemaic_all_size_proof.zip": {
+    "bytes": 31843,
+    "sha256": "892f6870f33df206c02fa82de9d71ee72832806930102af0b0a4160abee9e648"
+  },
+  "ptolemaic_final_review_v1.zip": {
+    "bytes": 823353,
+    "sha256": "3d43a7889b97bd6569dc822ce171dd1b6c56f77bd1c644406ee06951e3b7117e"
+  },
+  "review/RECEIVED_REVIEW.md": {
+    "bytes": 22291,
+    "original_upload": "Pasted markdown(20260925-205701).md",
+    "sha256": "d0c2779c21909fbff769893a02f18cfb52cb799206ac3f248d29abeb15f02cfe"
+  }
+}

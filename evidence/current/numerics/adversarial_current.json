@@ -1,0 +1,132 @@
+{
+  "conditional_hypotheses_note": "The universal strictness assumption of the inverse theorem is analytic; these tests do not verify that hypothesis over all metrics.",
+  "constraint_tolerance": 1e-08,
+  "design": "supplied SLSQP design and random stream with per-attempt diagnostics; 40 starts per n",
+  "ftol": 1e-12,
+  "groups": [
+    {
+      "T": 1.998614185980905,
+      "attempted": 40,
+      "converged_and_feasible": 39,
+      "exceptions": 0,
+      "exponent": 0.999,
+      "feasibility_accepted": 40,
+      "feasibility_rejected": 0,
+      "invalid_measurements": 0,
+      "k_n": 0.33240945732060334,
+      "m": 4,
+      "maximum_deficit_converged_feasible_valid": {
+        "accepted_samples": 39,
+        "status": "observed",
+        "value": 5.484501741648273e-13
+      },
+      "maximum_deficit_feasible_valid": {
+        "accepted_samples": 40,
+        "status": "observed",
+        "value": 3.2456259901891826e-12
+      },
+      "n": 3,
+      "solver_status_counts": {
+        "0": 39,
+        "8": 1
+      },
+      "solver_successes": 39
+    },
+    {
+      "T": 1.998614185980905,
+      "attempted": 40,
+      "converged_and_feasible": 39,
+      "exceptions": 0,
+      "exponent": 0.999,
+      "feasibility_accepted": 40,
+      "feasibility_rejected": 0,
+      "invalid_measurements": 0,
+      "k_n": 0.4989606394856787,
+      "m": 5,
+      "maximum_deficit_converged_feasible_valid": {
+        "accepted_samples": 39,
+        "status": "observed",
+        "value": 4.424238753131249e-14
+      },
+      "maximum_deficit_feasible_valid": {
+        "accepted_samples": 40,
+        "status": "observed",
+        "value": 4.424238753131249e-14
+      },
+      "n": 4,
+      "solver_status_counts": {
+        "0": 39,
+        "9": 1
+      },
+      "solver_successes": 39
+    },
+    {
+      "T": 1.6655118216507543,
+      "attempted": 40,
+      "converged_and_feasible": 37,
+      "exceptions": 0,
+      "exponent": 0.7359655941662062,
+      "feasibility_accepted": 40,
+      "feasibility_rejected": 0,
+      "invalid_measurements": 0,
+      "k_n": 0.33240945732060345,
+      "m": 6,
+      "maximum_deficit_converged_feasible_valid": {
+        "accepted_samples": 37,
+        "status": "observed",
+        "value": 2.220446049250313e-16
+      },
+      "maximum_deficit_feasible_valid": {
+        "accepted_samples": 40,
+        "status": "observed",
+        "value": 2.220446049250313e-16
+      },
+      "n": 5,
+      "solver_status_counts": {
+        "0": 37,
+        "4": 1,
+        "9": 2
+      },
+      "solver_successes": 37
+    },
+    {
+      "T": 1.4989606394856787,
+      "attempted": 40,
+      "converged_and_feasible": 35,
+      "exceptions": 0,
+      "exponent": 0.5839625007211562,
+      "feasibility_accepted": 40,
+      "feasibility_rejected": 0,
+      "invalid_measurements": 0,
+      "k_n": 0.24913386623806563,
+      "m": 7,
+      "maximum_deficit_converged_feasible_valid": {
+        "accepted_samples": 35,
+        "status": "observed",
+        "value": -1.6653345369377348e-16
+      },
+      "maximum_deficit_feasible_valid": {
+        "accepted_samples": 40,
+        "status": "observed",
+        "value": -1.6653345369377348e-16
+      },
+      "n": 6,
+      "solver_status_counts": {
+        "0": 35,
+        "4": 2,
+        "8": 3
+      },
+      "solver_successes": 35
+    }
+  ],
+  "log_distance_bounds": [
+    -4,
+    4
+  ],
+  "max_iterations": 300,
+  "positive_deficit_interpretation": "A floating-point positive deficit is not a validated counterexample. Constraint and numerical error require independent certification.",
+  "schema_version": "1.0",
+  "scope": "bounded exploratory optimisation; local convergence and tolerance-feasibility do not certify global extrema or counterexamples",
+  "seed": 21,
+  "trials": "adversarial_trials.jsonl"
+}

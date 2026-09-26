@@ -1,0 +1,7 @@
+Running core_exact
+Running core_symbolic
+Running manuscript_checks
+Running revision_checks
+Running reporting_checks
+PASS: 130 manifest files; 5 jobs. Reports: /Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/exact
+PASS denotes completion of the specified checks, not proof-assistant verification.

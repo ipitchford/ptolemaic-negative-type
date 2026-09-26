@@ -1,0 +1,11 @@
+{
+  "label_identifiers_unchanged": 72,
+  "numbered_equations_byte_identical": 43,
+  "review_source_byte_identical": true,
+  "scope": "Source invariance and input preservation; new unnumbered worked example is checked separately.",
+  "status": "PASS",
+  "unaltered_historical_input_files": {
+    "evidence/core": 19,
+    "evidence/supplied": 8
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "formal_proof_assistant_used": false,
+  "jobs": [
+    {
+      "elapsed_seconds": 3.602,
+      "exit_code": 0,
+      "job": "core_replay",
+      "reports": {
+        "exact_results.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "619cd5fcf1bc83092e577fa2f3268e5bc22a5c289e2571e41010eb657606201f"
+        },
+        "numerical_results.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "5692e95f759552c5af1254119f51a5b6926da6ebb8bedb24b1d1159df0925aee"
+        },
+        "symbolic_results.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "aed2ddbc0ddf600fbe0a62a1ca966a80c3b500b51098ecd99bef9eefcbe43494"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 1.415,
+      "exit_code": 0,
+      "job": "manuscript_checks",
+      "reports": {
+        "manuscript_checks.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "71f577246d9c452382618f4a532ea917f821000b3773eef519edd23150c92c56"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 0.447,
+      "exit_code": 0,
+      "job": "revision_checks",
+      "reports": {
+        "revision_checks.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "6e5932ee3e5727e19c7e6078ca3c649d8efc31ee6d36be44edbf4cfd631610d3"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 6.686,
+      "exit_code": 0,
+      "job": "legacy_audit_allsize",
+      "reports": {
+        "audit_allsize.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "f090af53aa1b2576583ffcfa7139fa82e63de34ede2b768d7722357add0577cd"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 3.687,
+      "exit_code": 0,
+      "job": "legacy_near_extremal",
+      "reports": {
+        "near_extremal.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "93cf3783b57a3535f313b9154cc633762f5b57763584f7334a301d53c80ec3fd"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 15.084,
+      "exit_code": 0,
+      "job": "legacy_adversarial_lemma4",
+      "reports": {
+        "adversarial_lemma4.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "31049408422ae4a742712ee5d568f5b9943cacbc71dd739be9187e4ee327172e"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 20.358,
+      "exit_code": 0,
+      "job": "current_numerics",
+      "reports": {
+        "adversarial_current.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "ca6129f86e4d3c05aa37734de60b0905f3e1534db2e345508db63707834e496e"
+        },
+        "adversarial_trials.jsonl": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "74536fe7863929b5a431ffe178b4cad9adcaced543849273f877ac415aaa2ecb"
+        },
+        "near_extremal_current.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "7d984cbc9e9fa4a5daae07ab9ab094154bbbc653774e927197c3ac4f4f1f0140"
+        },
+        "near_extremal_trials.jsonl": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "d39051f41033cb7d0b288d9ce412d3558280e87a4a725ec743c32a478711a55c"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 0.07,
+      "exit_code": 0,
+      "job": "current_summary",
+      "reports": {
+        "CURRENT_NUMERICAL_SUMMARY.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "b85fc0b0bfb0efb68a640b5e3845474729375cd518287390b2c863b7b0bec091"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 3.992,
+      "exit_code": 0,
+      "job": "reporting_checks",
+      "reports": {
+        "reporting_checks.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "a9b9edcac851ab3ebc47b2de1b755db7ba1f134ab72edcfabe952ab7fff64120"
+        }
+      }
+    }
+  ],
+  "manifest_files_verified": 130,
+  "manifest_files_verified_after_replay": 130,
+  "mode": "full",
+  "scope": "Specified algebraic checks, report integrity and bounded numerical corroboration; not universal proof validation.",
+  "status": "PASS",
+  "version": "1.0"
+}

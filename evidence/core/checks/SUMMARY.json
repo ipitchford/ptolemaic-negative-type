@@ -1,0 +1,31 @@
+{
+  "exact": {
+    "augmented_inverse_cases": 24,
+    "compatibility_rational_cases": 5733,
+    "deletion_cases": 156,
+    "diagonal_congruence_cases": 24,
+    "normalised_triangle_rational_cases": 2109,
+    "strict_cut_decompositions": 50,
+    "support_pattern_cases": 22199,
+    "uniform_star_cases": 145
+  },
+  "numerical_LP_runs": 240,
+  "numerical_inverse_correlations": {
+    "count": 324,
+    "largest_gram_condition_number": 56677.25106007673,
+    "largest_inverse_identity_residual": 6.851319511724796e-11,
+    "minimum_bound_slack": -1.3877787807814457e-16,
+    "skipped_ill_conditioned": 0,
+    "tolerance": 1e-07
+  },
+  "numerical_scalar_checks": {
+    "count": 246,
+    "precision_digits": 80,
+    "smallest_log_slack": "0.0"
+  },
+  "symbolic_identities": 18,
+  "universal_mathematical_coverage": "analytic proofs in RESEARCH_NOTE.md, not the finite checks",
+  "witness_ordered_triangle_checks": 15030,
+  "witness_oriented_ptolemy_checks": 23544,
+  "witnesses": 13
+}

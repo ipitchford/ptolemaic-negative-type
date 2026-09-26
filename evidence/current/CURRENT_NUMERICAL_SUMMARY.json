@@ -1,0 +1,429 @@
+{
+  "fresh_adversarial_optimisation": {
+    "constraints": {
+      "constraint_tolerance": 1e-08,
+      "ftol": 1e-12,
+      "log_distance_bounds": [
+        -4,
+        4
+      ],
+      "max_iterations": 300
+    },
+    "groups": [
+      {
+        "T": 1.998614185980905,
+        "attempted": 40,
+        "converged_and_feasible": 39,
+        "exceptions": 0,
+        "exponent": 0.999,
+        "feasibility_accepted": 40,
+        "feasibility_rejected": 0,
+        "invalid_measurements": 0,
+        "k_n": 0.33240945732060334,
+        "m": 4,
+        "maximum_deficit_converged_feasible_valid": {
+          "accepted_samples": 39,
+          "status": "observed",
+          "value": 5.484501741648273e-13
+        },
+        "maximum_deficit_feasible_valid": {
+          "accepted_samples": 40,
+          "status": "observed",
+          "value": 3.2456259901891826e-12
+        },
+        "n": 3,
+        "solver_status_counts": {
+          "0": 39,
+          "8": 1
+        },
+        "solver_successes": 39
+      },
+      {
+        "T": 1.998614185980905,
+        "attempted": 40,
+        "converged_and_feasible": 39,
+        "exceptions": 0,
+        "exponent": 0.999,
+        "feasibility_accepted": 40,
+        "feasibility_rejected": 0,
+        "invalid_measurements": 0,
+        "k_n": 0.4989606394856787,
+        "m": 5,
+        "maximum_deficit_converged_feasible_valid": {
+          "accepted_samples": 39,
+          "status": "observed",
+          "value": 4.424238753131249e-14
+        },
+        "maximum_deficit_feasible_valid": {
+          "accepted_samples": 40,
+          "status": "observed",
+          "value": 4.424238753131249e-14
+        },
+        "n": 4,
+        "solver_status_counts": {
+          "0": 39,
+          "9": 1
+        },
+        "solver_successes": 39
+      },
+      {
+        "T": 1.6655118216507543,
+        "attempted": 40,
+        "converged_and_feasible": 37,
+        "exceptions": 0,
+        "exponent": 0.7359655941662062,
+        "feasibility_accepted": 40,
+        "feasibility_rejected": 0,
+        "invalid_measurements": 0,
+        "k_n": 0.33240945732060345,
+        "m": 6,
+        "maximum_deficit_converged_feasible_valid": {
+          "accepted_samples": 37,
+          "status": "observed",
+          "value": 2.220446049250313e-16
+        },
+        "maximum_deficit_feasible_valid": {
+          "accepted_samples": 40,
+          "status": "observed",
+          "value": 2.220446049250313e-16
+        },
+        "n": 5,
+        "solver_status_counts": {
+          "0": 37,
+          "4": 1,
+          "9": 2
+        },
+        "solver_successes": 37
+      },
+      {
+        "T": 1.4989606394856787,
+        "attempted": 40,
+        "converged_and_feasible": 35,
+        "exceptions": 0,
+        "exponent": 0.5839625007211562,
+        "feasibility_accepted": 40,
+        "feasibility_rejected": 0,
+        "invalid_measurements": 0,
+        "k_n": 0.24913386623806563,
+        "m": 7,
+        "maximum_deficit_converged_feasible_valid": {
+          "accepted_samples": 35,
+          "status": "observed",
+          "value": -1.6653345369377348e-16
+        },
+        "maximum_deficit_feasible_valid": {
+          "accepted_samples": 40,
+          "status": "observed",
+          "value": -1.6653345369377348e-16
+        },
+        "n": 6,
+        "solver_status_counts": {
+          "0": 35,
+          "4": 2,
+          "8": 3
+        },
+        "solver_successes": 35
+      }
+    ],
+    "positive_deficit_interpretation": "A floating-point positive deficit is not a validated counterexample. Constraint and numerical error require independent certification.",
+    "raw_trials": "evidence/current/numerics/adversarial_trials.jsonl",
+    "seed": 21,
+    "source": "evidence/current/numerics/adversarial_current.json"
+  },
+  "fresh_near_extremal": {
+    "centred_eigenvalue_caveat": "The centred Gram matrix has an exact structural zero; its full minimum is not a positive stability margin.",
+    "definition_source": "scripts/current_numerics.py",
+    "definitions": {
+      "rayleigh_definition": "split_vector_gap/(z^T z); not substituted for a minimum eigenvalue",
+      "split_gap_definition": "-z^T E z/2 with z=(1/a,...,1/a,-1/r,...,-1/r); not an eigenvalue",
+      "zero_sum_eigenvalue_definition": "lambda_min(-Q^T E Q/2), Q^T Q=I and Q^T 1=0; ordinary Euclidean orthonormal basis"
+    },
+    "groups": [
+      {
+        "T": 1.44,
+        "accepted": 600,
+        "attempted": 600,
+        "exponent": 0.5260688116675876,
+        "m": 11,
+        "numerical_exceptions": 0,
+        "rejected": 0,
+        "statistics": {
+          "centred_gram_min_eigenvalue": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": -3.929148673087468e-16
+          },
+          "split_vector_gap": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 2.295174789166988e-05
+          },
+          "split_vector_rayleigh_quotient": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 6.259567606819057e-05
+          },
+          "zero_sum_gram_min_eigenvalue": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 6.259550965292959e-05
+          }
+        }
+      },
+      {
+        "T": 1.4,
+        "accepted": 600,
+        "attempted": 600,
+        "exponent": 0.48542682717024166,
+        "m": 12,
+        "numerical_exceptions": 0,
+        "rejected": 0,
+        "statistics": {
+          "centred_gram_min_eigenvalue": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": -5.509915440571334e-16
+          },
+          "split_vector_gap": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 3.17121893068237e-05
+          },
+          "split_vector_rayleigh_quotient": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 9.249388547823576e-05
+          },
+          "zero_sum_gram_min_eigenvalue": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 9.249363594365789e-05
+          }
+        }
+      },
+      {
+        "T": 1.3611111111111112,
+        "accepted": 600,
+        "attempted": 600,
+        "exponent": 0.4447848426728959,
+        "m": 13,
+        "numerical_exceptions": 0,
+        "rejected": 0,
+        "statistics": {
+          "centred_gram_min_eigenvalue": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": -6.357761539454998e-16
+          },
+          "split_vector_gap": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 3.4349206642373005e-05
+          },
+          "split_vector_rayleigh_quotient": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 0.00011097435992151279
+          },
+          "zero_sum_gram_min_eigenvalue": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 0.0001109737439395353
+          }
+        }
+      },
+      {
+        "T": 1.3333333333333333,
+        "accepted": 600,
+        "attempted": 600,
+        "exponent": 0.41503749927884376,
+        "m": 14,
+        "numerical_exceptions": 0,
+        "rejected": 0,
+        "statistics": {
+          "centred_gram_min_eigenvalue": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": -5.555451931815725e-16
+          },
+          "split_vector_gap": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 0.00012517196803641002
+          },
+          "split_vector_rayleigh_quotient": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 0.00042916103326769156
+          },
+          "zero_sum_gram_min_eigenvalue": {
+            "accepted_samples": 600,
+            "status": "observed",
+            "value": 0.00042915666250920026
+          }
+        }
+      }
+    ],
+    "raw_trials": "evidence/current/numerics/near_extremal_trials.jsonl",
+    "seed": 5,
+    "source": "evidence/current/numerics/near_extremal_current.json"
+  },
+  "historical_empty_near_extremal_experiment": [
+    {
+      "accepted": 0,
+      "attempted": 400,
+      "interpretation": "No observed minimum exists when accepted=0; the historical initial sentinel is not an observation.",
+      "m": 11,
+      "minimum_centred_gram_eigenvalue": {
+        "accepted_samples": 0,
+        "status": "no_observations",
+        "value": null
+      },
+      "rejected": 400,
+      "source": {
+        "path": "evidence/supplied/audit_allsize.json",
+        "sha256": "689981700f645bf193abce6268fe0b0bc03cb3feedca6e54a1a1ed7d8e396793"
+      }
+    },
+    {
+      "accepted": 0,
+      "attempted": 400,
+      "interpretation": "No observed minimum exists when accepted=0; the historical initial sentinel is not an observation.",
+      "m": 12,
+      "minimum_centred_gram_eigenvalue": {
+        "accepted_samples": 0,
+        "status": "no_observations",
+        "value": null
+      },
+      "rejected": 400,
+      "source": {
+        "path": "evidence/supplied/audit_allsize.json",
+        "sha256": "689981700f645bf193abce6268fe0b0bc03cb3feedca6e54a1a1ed7d8e396793"
+      }
+    },
+    {
+      "accepted": 0,
+      "attempted": 400,
+      "interpretation": "No observed minimum exists when accepted=0; the historical initial sentinel is not an observation.",
+      "m": 13,
+      "minimum_centred_gram_eigenvalue": {
+        "accepted_samples": 0,
+        "status": "no_observations",
+        "value": null
+      },
+      "rejected": 400,
+      "source": {
+        "path": "evidence/supplied/audit_allsize.json",
+        "sha256": "689981700f645bf193abce6268fe0b0bc03cb3feedca6e54a1a1ed7d8e396793"
+      }
+    },
+    {
+      "accepted": 0,
+      "attempted": 400,
+      "interpretation": "No observed minimum exists when accepted=0; the historical initial sentinel is not an observation.",
+      "m": 14,
+      "minimum_centred_gram_eigenvalue": {
+        "accepted_samples": 0,
+        "status": "no_observations",
+        "value": null
+      },
+      "rejected": 400,
+      "source": {
+        "path": "evidence/supplied/audit_allsize.json",
+        "sha256": "689981700f645bf193abce6268fe0b0bc03cb3feedca6e54a1a1ed7d8e396793"
+      }
+    }
+  ],
+  "historical_mixed_followup": [
+    {
+      "accepted": 600,
+      "interpretation": "The legacy field takes a minimum across two different statistics; separate historic values cannot be recovered from that aggregate. Fresh measurements are reported separately.",
+      "m": 11,
+      "minimum_centred_gram_eigenvalue": {
+        "accepted_samples": 600,
+        "status": "not_separately_recorded",
+        "value": null
+      },
+      "minimum_split_vector_gap": {
+        "accepted_samples": 600,
+        "status": "not_separately_recorded",
+        "value": null
+      },
+      "source": {
+        "path": "evidence/supplied/near_extremal.json",
+        "sha256": "b1981c14d6cd863dcbb763cda99595af1792727fbb87dcf2f9c92455ee35c7aa"
+      }
+    },
+    {
+      "accepted": 600,
+      "interpretation": "The legacy field takes a minimum across two different statistics; separate historic values cannot be recovered from that aggregate. Fresh measurements are reported separately.",
+      "m": 12,
+      "minimum_centred_gram_eigenvalue": {
+        "accepted_samples": 600,
+        "status": "not_separately_recorded",
+        "value": null
+      },
+      "minimum_split_vector_gap": {
+        "accepted_samples": 600,
+        "status": "not_separately_recorded",
+        "value": null
+      },
+      "source": {
+        "path": "evidence/supplied/near_extremal.json",
+        "sha256": "b1981c14d6cd863dcbb763cda99595af1792727fbb87dcf2f9c92455ee35c7aa"
+      }
+    },
+    {
+      "accepted": 600,
+      "interpretation": "The legacy field takes a minimum across two different statistics; separate historic values cannot be recovered from that aggregate. Fresh measurements are reported separately.",
+      "m": 13,
+      "minimum_centred_gram_eigenvalue": {
+        "accepted_samples": 600,
+        "status": "not_separately_recorded",
+        "value": null
+      },
+      "minimum_split_vector_gap": {
+        "accepted_samples": 600,
+        "status": "not_separately_recorded",
+        "value": null
+      },
+      "source": {
+        "path": "evidence/supplied/near_extremal.json",
+        "sha256": "b1981c14d6cd863dcbb763cda99595af1792727fbb87dcf2f9c92455ee35c7aa"
+      }
+    },
+    {
+      "accepted": 600,
+      "interpretation": "The legacy field takes a minimum across two different statistics; separate historic values cannot be recovered from that aggregate. Fresh measurements are reported separately.",
+      "m": 14,
+      "minimum_centred_gram_eigenvalue": {
+        "accepted_samples": 600,
+        "status": "not_separately_recorded",
+        "value": null
+      },
+      "minimum_split_vector_gap": {
+        "accepted_samples": 600,
+        "status": "not_separately_recorded",
+        "value": null
+      },
+      "source": {
+        "path": "evidence/supplied/near_extremal.json",
+        "sha256": "b1981c14d6cd863dcbb763cda99595af1792727fbb87dcf2f9c92455ee35c7aa"
+      }
+    }
+  ],
+  "limitations": [
+    "No validated interval bounds or exhaustive search.",
+    "Tolerance-feasible does not mean optimiser-converged or exactly feasible.",
+    "The centred Gram matrix always has a structural zero eigenvalue.",
+    "The eigenvalue and split-vector gap have different normalisations and are never pooled.",
+    "Raw trial values can vary across numerical library/platform versions; exact identity reports are compared separately."
+  ],
+  "manuscript_version": "1.0",
+  "proof_role": "corroborative_only",
+  "purpose": "Superseding, independently interpretable numerical reporting layer requested in review section 4.2.",
+  "recorded_date": "2026-09-25",
+  "schema_version": "1.0",
+  "source_separation": "Historical data and fresh instrumented reruns are separate observations; no numerical history has been rewritten.",
+  "universal_proof_verified_by_these_statistics": false
+}

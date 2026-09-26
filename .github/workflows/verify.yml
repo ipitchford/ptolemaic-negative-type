@@ -1,0 +1,35 @@
+name: Reproduce supplied checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.5'
+          cache: pip
+      - name: Install pinned replay libraries
+        run: python -m pip install -r requirements.txt
+      - name: Check complete payload and replay
+        run: python -B replay_publication.py --mode full --output "$RUNNER_TEMP/replay"
+      - name: Verify the wrapper refuses unsupported optimized execution
+        run: |
+          if python -O replay_publication.py --mode integrity > "$RUNNER_TEMP/optimized.log" 2>&1; then
+            echo 'ERROR: optimized execution was incorrectly accepted'
+            exit 1
+          fi
+          grep -F 'Do not run with -O' "$RUNNER_TEMP/optimized.log"
+      - name: Retain actual replay receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: implementation-checks-not-universal-proof
+          path: |
+            ${{ runner.temp }}/replay
+            ${{ runner.temp }}/optimized.log

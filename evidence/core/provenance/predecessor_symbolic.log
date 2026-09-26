@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "Catalan_kernel_first_eight_coefficients": "PASS",
+    "base_mass_formula": "PASS",
+    "correlation_constant_dimension_3": "PASS",
+    "correlation_constant_dimension_4": "PASS",
+    "correlation_constant_dimension_5": "PASS",
+    "dimension_five_induction_gap": "PASS",
+    "dimension_five_interval_lower_bound": "11/25 > 0 on 0<=v<=1",
+    "dimension_five_interval_polynomial": "PASS",
+    "dimension_four_induction_gap": "PASS",
+    "dimension_four_interval_quadratic": "convex with negative endpoint values",
+    "first_zero_criterion": "PASS",
+    "inverse_triangle_minor_01": "PASS",
+    "inverse_triangle_minor_02": "PASS",
+    "inverse_triangle_minor_12": "PASS",
+    "ordered_pair_ratio": "PASS",
+    "radial_reciprocal_relation": "PASS",
+    "split_endpoint_formula": "PASS",
+    "symbolic_augmented_inverse": "PASS",
+    "symbolic_block_drop": "PASS"
+  },
+  "status": "PASS: independent symbolic identities; not formal verification of analytic inequalities",
+  "sympy_version": "1.14.0"
+}

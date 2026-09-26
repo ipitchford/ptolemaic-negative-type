@@ -1,0 +1,11 @@
+Running core_replay
+Running manuscript_checks
+Running revision_checks
+Running legacy_audit_allsize
+Running legacy_near_extremal
+Running legacy_adversarial_lemma4
+Running current_numerics
+Running current_summary
+Running reporting_checks
+PASS: 130 manifest files; 9 jobs. Reports: /Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/full
+PASS denotes completion of the specified checks, not proof-assistant verification.

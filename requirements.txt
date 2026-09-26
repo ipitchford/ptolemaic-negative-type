@@ -1,0 +1,6 @@
+# Reference Linux replay environment supplied with the research bundle.
+# Exact checks compare bytes; exploratory numerical output is not byte-stable.
+numpy==2.3.5
+scipy==1.17.0
+sympy==1.14.0
+mpmath==1.3.0

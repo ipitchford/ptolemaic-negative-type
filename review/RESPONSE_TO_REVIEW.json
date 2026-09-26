@@ -1,0 +1,99 @@
+{
+  "central_mathematical_changes": false,
+  "disposition": "all required and recommended bounded revisions implemented",
+  "items": [
+    {
+      "action": "Inserted the requested sentence with n+1=a+2<=m-1 and retained Appendix B.",
+      "id": "R4.1",
+      "location": "paper/ptolemaic.tex; Theorem 5.1, before its proof",
+      "request": "Induction dependency immediately after Theorem 5.1",
+      "status": "Implemented"
+    },
+    {
+      "action": "Historical empty minima become null; unrecorded components stay null; fresh measurements, sample counts and source links are distinct.",
+      "id": "R4.2",
+      "location": "evidence/current/CURRENT_NUMERICAL_SUMMARY.json; scripts/current_numerics.py",
+      "request": "Machine-readable missingness and separate statistics",
+      "status": "Implemented"
+    },
+    {
+      "action": "Identifies P(7) as the first new value and explains dimension-independent packing plus recursive inverse-entry control; preserves attribution.",
+      "id": "R4.3",
+      "location": "paper/ptolemaic.tex; Sections 1.1-1.2",
+      "request": "Methodological advance and first new cardinality",
+      "status": "Implemented"
+    },
+    {
+      "action": "Defines d^alpha for 0<alpha<=1; abstract uses powered stars before the definition.",
+      "id": "M1",
+      "location": "paper/ptolemaic.tex; Section 1",
+      "request": "Define snowflake at first use",
+      "status": "Implemented"
+    },
+    {
+      "action": "Explains clique, independent set and all cross edges; retains shortest-path distances.",
+      "id": "M2",
+      "location": "paper/ptolemaic.tex; Proposition 7.1",
+      "request": "Explain complete split graphs",
+      "status": "Implemented"
+    },
+    {
+      "action": "Adds log_2(16/9) and log_2(5/3).",
+      "id": "M3",
+      "location": "paper/ptolemaic.tex; Section 1",
+      "request": "Add P(7) and P(8) in introduction",
+      "status": "Implemented"
+    },
+    {
+      "action": "States attainment for equal lengths when R_n(T)>=2 inside the theorem statement; keeps the following qualification.",
+      "id": "M4",
+      "location": "paper/ptolemaic.tex; Theorem 3.4",
+      "request": "Place packing sharpness regime at the bound",
+      "status": "Implemented"
+    },
+    {
+      "action": "Retained unchanged.",
+      "id": "M5",
+      "location": "paper/ptolemaic.tex; Appendix B",
+      "request": "Retain dependency appendix",
+      "status": "Implemented"
+    },
+    {
+      "action": "Separates analytic proof, exact finite checks, numerical corroboration and absent external/formal assurance.",
+      "id": "M6",
+      "location": "paper/ptolemaic.tex; assurance and Section 8; publication/METADATA.json",
+      "request": "Preserve assurance distinctions",
+      "status": "Implemented"
+    },
+    {
+      "action": "All 160 attempts retained; success/status/messages and feasibility are separate; no silent exception omission.",
+      "id": "N1",
+      "location": "evidence/current/numerics/adversarial_trials.jsonl",
+      "request": "Record solver status, rejections and failures",
+      "status": "Implemented"
+    },
+    {
+      "action": "Added exact quadratic form, endpoint and sign; supplementary verifier also checks the centred Gram spectrum.",
+      "id": "O1",
+      "location": "paper/ptolemaic.tex; Section 7",
+      "request": "Add worked seven-point example",
+      "status": "Implemented"
+    },
+    {
+      "action": "No additional claim introduced; review explicitly states these are not required for the theorem.",
+      "id": "O2",
+      "location": "review/RESPONSE_TO_REVIEW.md",
+      "request": "Equality classification or stability",
+      "status": "Future work; not required"
+    },
+    {
+      "action": "No Lean/formal certificate claimed; all hypotheses remain explicit in the manuscript.",
+      "id": "O3",
+      "location": "review/RESPONSE_TO_REVIEW.md",
+      "request": "Formalise induction",
+      "status": "Future work; not required"
+    }
+  ],
+  "source": "review/RECEIVED_REVIEW.md",
+  "version": "1.0"
+}

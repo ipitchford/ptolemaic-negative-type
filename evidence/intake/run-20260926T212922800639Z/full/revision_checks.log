@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "editorial requirements and exact added examples; not proof-assistant verification",
+  "check_count": 16,
+  "checks": [
+    "dependency_sentence",
+    "new_cardinalities",
+    "methodological_comparison",
+    "snowflake_definition",
+    "split_graph_definition",
+    "introductory_values",
+    "adjacent_sharpness_regime",
+    "worked_seven_point_example",
+    "dependency_appendix_retained",
+    "missingness_and_separate_statistics",
+    "unrefereed_status",
+    "dependency_sentence_immediately_after_theorem_before_proof",
+    "sharpness_regime_in_packing_statement",
+    "seven_point_quadratic_form_and_sharp_endpoint",
+    "seven_point_centred_gram_exact_spectrum",
+    "eight_point_introductory_threshold"
+  ],
+  "seven_point_form": "3*T/4 - 4/3",
+  "seven_point_centred_gram_eigenvalues": {
+    "1/2": 2,
+    "0": 2,
+    "8/9": 3
+  }
+}
+
+--- STDERR ---

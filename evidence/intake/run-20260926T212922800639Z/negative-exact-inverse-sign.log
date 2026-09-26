@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/semantic-mutations/inverse-sign/verify_exact.py", line 198, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/semantic-mutations/inverse-sign/verify_exact.py", line 72, in main
+    assert V==predicted; assert mm(A,V)==eye(n+2);blocks+=1
+           ^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,81 @@
+{
+  "formal_proof_assistant_used": false,
+  "jobs": [
+    {
+      "elapsed_seconds": 4.697,
+      "exit_code": 0,
+      "job": "core_replay",
+      "reports": {
+        "checks/exact_results.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "619cd5fcf1bc83092e577fa2f3268e5bc22a5c289e2571e41010eb657606201f"
+        },
+        "checks/numerical_results.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": true,
+          "sha256": "a7dbe67c17be79f0f3653369ca15ab8f37b04f688a0ab15e5228f9576aa2ec76"
+        },
+        "checks/symbolic_results.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "aed2ddbc0ddf600fbe0a62a1ca966a80c3b500b51098ecd99bef9eefcbe43494"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 1.353,
+      "exit_code": 0,
+      "job": "manuscript_checks",
+      "reports": {
+        "manuscript_checks.json": {
+          "exact_byte_match_required": true,
+          "matches_shipped_bytes": true,
+          "sha256": "71f577246d9c452382618f4a532ea917f821000b3773eef519edd23150c92c56"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 6.638,
+      "exit_code": 0,
+      "job": "audit_allsize",
+      "reports": {
+        "audit_allsize.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "bc1674239730c3bea8f9029c8a04c67c6768e06b9f9f09184a90968008af25c8"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 2.856,
+      "exit_code": 0,
+      "job": "near_extremal",
+      "reports": {
+        "near_extremal.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": true,
+          "sha256": "b1981c14d6cd863dcbb763cda99595af1792727fbb87dcf2f9c92455ee35c7aa"
+        }
+      }
+    },
+    {
+      "elapsed_seconds": 13.348,
+      "exit_code": 0,
+      "job": "adversarial_lemma4",
+      "reports": {
+        "adversarial_lemma4.json": {
+          "exact_byte_match_required": false,
+          "matches_shipped_bytes": false,
+          "sha256": "01534dd48be572e85f434c4f13930de9b76558a5c1c26d43e680d585837d0d83"
+        }
+      }
+    }
+  ],
+  "manifest_files_verified": 65,
+  "manifest_files_verified_after_replay": 65,
+  "mode": "full",
+  "scope": "Proof-supporting identities and bounded numerical corroboration; the analytic proof is in paper/ptolemaic.pdf.",
+  "status": "PASS",
+  "version": "1.0-rc1"
+}

@@ -1,0 +1,220 @@
+{
+  "counterexample_masses": {
+    "M1_difference": "0.00002513316054494107142375055638459368949534577614358781631708233534869575289644698",
+    "M1_shortened": "2.1123371265531802395994455400990833950461618422460967383406673782480591106701608",
+    "M1_star": "2.1123119933926352985280217895426988013566664964699531505243502959127104149172643",
+    "M2_claimed_bound": "1.4230859987408400999802992972956352243944300709549990538997985310145550569352269",
+    "M2_star": "1.4416749837666784790721517691344504148461634575459919065427270412995287313293915"
+  },
+  "inverse_correlation_tests": {
+    "count": 324,
+    "largest_gram_condition_number": 56677.25106007673,
+    "largest_inverse_identity_residual": 6.851319511724796e-11,
+    "minimum_bound_slack": -1.3877787807814457e-16,
+    "skipped_ill_conditioned": 0,
+    "tolerance": 1e-07
+  },
+  "no_numerical_step_is_used_as_a_proof_premise": true,
+  "packing_tests": [
+    {
+      "bound": 2,
+      "constraint_violation": 2.220446049250313e-16,
+      "maximum": 1.436830397030768,
+      "n": 2,
+      "q": 0.03,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 8.881784197001252e-16,
+      "maximum": 1.4996872757483342,
+      "n": 2,
+      "q": 0.2,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 2.220446049250313e-16,
+      "maximum": 1.5366106771505188,
+      "n": 2,
+      "q": 0.5,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 2.4014124022642136e-11,
+      "maximum": 1.7303508908150333,
+      "n": 2,
+      "q": 0.85,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 2.220446049250313e-16,
+      "maximum": 1.6236725327920698,
+      "n": 3,
+      "q": 0.03,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 6.661338147750939e-16,
+      "maximum": 1.7453373610901657,
+      "n": 3,
+      "q": 0.2,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 5.773159728050814e-15,
+      "maximum": 1.7768282396942205,
+      "n": 3,
+      "q": 0.5,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2.505221142283812,
+      "constraint_violation": 2.0866885996895235e-10,
+      "maximum": 2.4862859236943438,
+      "n": 3,
+      "q": 0.85,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 4.440892098500626e-16,
+      "maximum": 1.7328443375720823,
+      "n": 4,
+      "q": 0.03,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 2.220446049250313e-16,
+      "maximum": 1.860843643470002,
+      "n": 4,
+      "q": 0.2,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2.129154902107702,
+      "constraint_violation": 8.881784197001252e-16,
+      "maximum": 1.906474707630859,
+      "n": 4,
+      "q": 0.5,
+      "successful_runs": 10
+    },
+    {
+      "bound": 3.0858277975792308,
+      "constraint_violation": 8.463163503336091e-11,
+      "maximum": 2.427810848506394,
+      "n": 4,
+      "q": 0.85,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 4.440892098500626e-16,
+      "maximum": 1.9127889059367613,
+      "n": 8,
+      "q": 0.03,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2.0102746355298775,
+      "constraint_violation": 3.1086244689504383e-15,
+      "maximum": 1.982569061038456,
+      "n": 8,
+      "q": 0.2,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2.6227336644670043,
+      "constraint_violation": 1.1546319456101628e-14,
+      "maximum": 2.0225052375958845,
+      "n": 8,
+      "q": 0.5,
+      "successful_runs": 10
+    },
+    {
+      "bound": 4.730238177570359,
+      "constraint_violation": 1.2723155862204294e-13,
+      "maximum": 2.505106237651895,
+      "n": 8,
+      "q": 0.85,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 4.440892098500626e-16,
+      "maximum": 1.9803235024216237,
+      "n": 16,
+      "q": 0.03,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2.1666235511335876,
+      "constraint_violation": 1.1102230246251565e-15,
+      "maximum": 1.9996354972535748,
+      "n": 16,
+      "q": 0.2,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2.966589738569836,
+      "constraint_violation": 4.440892098500626e-16,
+      "maximum": 2.147180026978901,
+      "n": 16,
+      "q": 0.5,
+      "successful_runs": 10
+    },
+    {
+      "bound": 6.448380754201152,
+      "constraint_violation": 2.6645352591003757e-15,
+      "maximum": 3.5813942964169607,
+      "n": 16,
+      "q": 0.85,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2,
+      "constraint_violation": 8.881784197001252e-16,
+      "maximum": 1.997516839711815,
+      "n": 32,
+      "q": 0.03,
+      "successful_runs": 10
+    },
+    {
+      "bound": 2.2542870291059183,
+      "constraint_violation": 7.638180844109201e-09,
+      "maximum": 2.0113615544159367,
+      "n": 32,
+      "q": 0.2,
+      "successful_runs": 10
+    },
+    {
+      "bound": 3.174700877529081,
+      "constraint_violation": 4.440892098500626e-16,
+      "maximum": 2.3040214402331713,
+      "n": 32,
+      "q": 0.5,
+      "successful_runs": 10
+    },
+    {
+      "bound": 7.879375314894439,
+      "constraint_violation": 3.1086244689504383e-15,
+      "maximum": 4.7393164355901565,
+      "n": 32,
+      "q": 0.85,
+      "successful_runs": 10
+    }
+  ],
+  "scalar_tests": {
+    "count": 246,
+    "precision_digits": 80,
+    "smallest_log_slack": "0.0"
+  },
+  "scope": "bounded numerical corroboration only; no global search or formal proof",
+  "seed": 9260925,
+  "status": "PASS"
+}

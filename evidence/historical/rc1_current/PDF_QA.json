@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "rendered_all_pages": true,
+  "renderer": "PDF skill render_pdf.py (PDFium/Poppler available)",
+  "inspection": "All-page contact sheets plus detailed selected-page inspection",
+  "pdfs": [
+    {
+      "file": "paper/ptolemaic.pdf",
+      "pages": 14,
+      "author_metadata": "",
+      "text_bounds_within_page": true,
+      "missing_glyph_replacement_found": false,
+      "unresolved_question_marks_found": false,
+      "page_counts": [
+        {
+          "page": 1,
+          "characters": 2353
+        },
+        {
+          "page": 2,
+          "characters": 3298
+        },
+        {
+          "page": 3,
+          "characters": 2073
+        },
+        {
+          "page": 4,
+          "characters": 1567
+        },
+        {
+          "page": 5,
+          "characters": 2014
+        },
+        {
+          "page": 6,
+          "characters": 1651
+        },
+        {
+          "page": 7,
+          "characters": 2558
+        },
+        {
+          "page": 8,
+          "characters": 2415
+        },
+        {
+          "page": 9,
+          "characters": 2329
+        },
+        {
+          "page": 10,
+          "characters": 1780
+        },
+        {
+          "page": 11,
+          "characters": 2981
+        },
+        {
+          "page": 12,
+          "characters": 3385
+        },
+        {
+          "page": 13,
+          "characters": 2170
+        },
+        {
+          "page": 14,
+          "characters": 2503
+        }
+      ]
+    },
+    {
+      "file": "review/REVIEW_GUIDE.pdf",
+      "pages": 2,
+      "author_metadata": "",
+      "text_bounds_within_page": true,
+      "missing_glyph_replacement_found": false,
+      "unresolved_question_marks_found": false,
+      "page_counts": [
+        {
+          "page": 1,
+          "characters": 2974
+        },
+        {
+          "page": 2,
+          "characters": 3639
+        }
+      ]
+    }
+  ],
+  "paper_latex_overfull_or_unresolved_references": false,
+  "note": "Layout checks are not mathematical proof checks."
+}

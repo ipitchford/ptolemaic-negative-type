@@ -1,0 +1,25 @@
+{
+  "checks": [
+    "logarithmic_second_derivative",
+    "logarithmic_first_derivative",
+    "supporting_tangent_slope",
+    "dimension_compatibility",
+    "mass_to_correlation_constant",
+    "packing_constant_rearrangement",
+    "threshold_minimisation_formula",
+    "parameter_condition",
+    "copositive_margin",
+    "augmented_inverse_generic_dimension_three",
+    "normalised_inverse_deletion",
+    "denominator_comparison",
+    "triangle_magnitude_lower_bound",
+    "residual_correlation_squared",
+    "residual_correlation_sign",
+    "opposite_order_chebyshev",
+    "strict_four_point_cut_decomposition",
+    "star_mass_counterexample"
+  ],
+  "count": 18,
+  "implementation": "SymPy; independent reconstruction, not a proof assistant",
+  "status": "PASS"
+}

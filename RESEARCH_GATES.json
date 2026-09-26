@@ -1,0 +1,207 @@
+{
+  "schemaVersion": "1.0",
+  "recordType": "retrospective-publication-intake",
+  "createdAt": "2026-09-26",
+  "prospectiveResearchSearchRecorded": false,
+  "historicalTimingBoundary": "This record imports reported 25 September source checks and a bounded 26 September publication-intake comparison. It does not assert that either preceded discovery or backdate a research plan.",
+  "assuranceBoundary": "Record completeness and bounded source comparison only; no proof validation, exhaustive priority determination, external specialist review or formal certification follows from this JSON or its checker.",
+  "intakeTarget": {
+    "manuscript": "paper/ptolemaic.tex",
+    "sha256": "656436a846986b52a0a35d3509fdfe7ff3ead93f4c5ce8fd40b8952c16139a01",
+    "scope": "Supplied version 1.0 before public-manuscript attribution/metadata updates"
+  },
+  "currentSourceComparison": {
+    "status": "completed-with-attribution-correction",
+    "date": "2026-09-26",
+    "completedAtUtc": "21:28",
+    "assessorKind": "agent",
+    "sourceRecordName": "prior-art-check.md",
+    "sourceRecordSha256": "07f7b9a7ad646110af238074004e7fcf48f374c287778b3dcae8271fa7769aa4",
+    "publicSummary": "CITATION_AUDIT.md",
+    "releaseConditions": [
+      {
+        "condition": "Add Korea Superintelligence Labs Ideosphere v3 attribution for general anchor constants and complete-split thresholds, then verify the updated public manuscript and bibliography.",
+        "status": "source-correction-read-back-final-rendering-separate",
+        "sourceCheckpointSha256": "69e666bb731834125121fd20d6941df05cecc79b45477e5d3761f260a1656c66",
+        "mathematicalDefectIdentified": false
+      }
+    ]
+  },
+  "contributionMap": [
+    {
+      "claim": "The exact all-cardinality parity formula is the stated BHKL conjecture, not a new conjecture or object introduced by this manuscript.",
+      "unit": "statement",
+      "paperLocation": "Abstract; Theorem 1.1; Corollary 1.2; Section 1.1",
+      "searches": [
+        {"date": "2026-09-26", "query": "\"2607.15375\" \"conjecture\" resolution", "corpus": "Web search with primary arXiv versioned text and current history inspected", "evidenceLocator": "CITATION_AUDIT.md: Current search scope"},
+        {"date": "2026-09-26", "query": "\"Baker\" \"Huh\" \"Kummer\" \"Lorscheid\" \"Conjecture 6.4\"", "corpus": "Web search and BHKL v2 Conjecture 6.4", "evidenceLocator": "CITATION_AUDIT.md"}
+      ],
+      "closestPriorWork": "Baker-Huh-Kummer-Lorscheid, arXiv:2607.15375v2, Conjecture 6.4 and Proposition 7.5.",
+      "verdict": "known-cited"
+    },
+    {
+      "claim": "The manuscript presents a universal analytic lower-bound proof for every m>=6; relative to the inspected predecessor results, newly established cardinalities begin at m=7.",
+      "unit": "proof",
+      "paperLocation": "Theorem 1.1; Proposition 6.1; Sections 3-6; Appendix B",
+      "searches": [
+        {"date": "2026-09-26", "query": "\"Ptolemaic\" \"P(7)\"", "corpus": "Web search; Ercan v1 and KSL Ideosphere v3 primary source comparison", "evidenceLocator": "CITATION_AUDIT.md"},
+        {"date": "2026-09-26", "query": "\"Ptolemaic\" \"all cardinalities\"", "corpus": "Web search; substantial terminology noise, no exhaustive search", "evidenceLocator": "CITATION_AUDIT.md"},
+        {"date": "2026-09-26", "query": "\"Sharp negative type of finite Ptolemaic metrics\"", "corpus": "Web search; primary papers used for mathematical comparison", "evidenceLocator": "CITATION_AUDIT.md"}
+      ],
+      "closestPriorWork": "Ercan v1 Theorem 1.1 gives P(5) and P(6); KSL Ideosphere v3 supplies general constants and split thresholds but leaves the general low-exponent estimate unresolved.",
+      "verdict": "new-in-bounded-search",
+      "qualification": "No competing all-cardinality proof surfaced in this limited comparison. This is not an exhaustive priority finding or a fresh proof audit."
+    },
+    {
+      "claim": "The methodological contribution is the universal star-packing estimate and inverse-correlation induction, with strictness discharged by a separate cardinality induction; classical matrix identities and preceding anchor constants are attributed.",
+      "unit": "method",
+      "paperLocation": "Section 1.1; Lemma 3.2; Theorem 3.4; Theorem 5.1; Proposition 6.1",
+      "searches": [
+        {"date": "2026-09-26", "query": "\"Ptolemaic\" \"star packing\"", "corpus": "Web search and primary source comparison", "evidenceLocator": "CITATION_AUDIT.md"},
+        {"date": "2026-09-26", "query": "\"Ptolemaic\" \"inverse-correlation\"", "corpus": "Web search and primary source comparison", "evidenceLocator": "CITATION_AUDIT.md"},
+        {"date": "2026-09-26", "query": "\"Ptolemaic\" \"packing\" metric negative type", "corpus": "Web search with substantial irrelevant results; cross-disciplinary aliases not exhaustively searched", "evidenceLocator": "CITATION_AUDIT.md"}
+      ],
+      "closestPriorWork": "Ercan's partial correlations and inversion transport; KSL Ideosphere v3 Sections 11-12 anchor constants/split thresholds; Schoenberg, Sánchez, Fiedler and Haynsworth for classical Gram/inverse/inertia background.",
+      "verdict": "partially-known-cited",
+      "qualification": "KSL attribution is read back in the working public manuscript; no first-invention claim for constants, inversion, Schur complements or circumcenter identities. Final rendered-target checks are separate."
+    },
+    {
+      "claim": "Complete split metrics furnish sharp witnesses; the seven-point calculation is an explicit illustration, not a newly invented class of metrics or a full equality classification.",
+      "unit": "object",
+      "paperLocation": "Proposition 7.1 and Seven-point example",
+      "searches": [
+        {"date": "2026-09-26", "query": "\"Ptolemaic\" \"16/9\" \"5/3\"", "corpus": "Web search; KSL Ideosphere v3 Sections 11-12 inspected for split thresholds", "evidenceLocator": "CITATION_AUDIT.md"}
+      ],
+      "closestPriorWork": "The cited Ptolemaic/negative-type line and KSL Ideosphere v3 split-threshold and sharpness calculations.",
+      "verdict": "known-cited",
+      "qualification": "Additional KSL citation is a read-back correction to the working public copy; the original source bundle remains unchanged."
+    },
+    {
+      "claim": "q(n)=P(n-1) identifies the rank-two uniform Lorentzian threshold; the correspondence and classical embedding/inverse identities are not new invariants.",
+      "unit": "identification",
+      "paperLocation": "Corollary 1.2; Sections 4 and 7.1-7.2",
+      "searches": [
+        {"date": "2026-09-26", "query": "\"2607.15375\" \"2608.20606\" \"proof\"", "corpus": "Web search and versioned primary texts; BHKL Proposition 7.5 compared directly", "evidenceLocator": "CITATION_AUDIT.md"}
+      ],
+      "closestPriorWork": "BHKL v2 Proposition 7.5; classical distance-matrix and embedding literature identified in review/SOURCE_LEDGER.md.",
+      "verdict": "known-cited"
+    }
+  ],
+  "sourcesReadInFull": [
+    {
+      "citation": "Baker-Huh-Kummer-Lorscheid, arXiv:2607.15375v2",
+      "usedFor": "Conjecture, q(n)=P(n-1), and imported four-point endpoint",
+      "readWhat": "Current source-comparison agent inspected versioned full-text Conjecture 6.4, Proposition 7.5, Theorem 7.16 and Corollary 7.17 and associated definitions; this is not a claim to have audited the entire preprint.",
+      "date": "2026-09-26",
+      "evidenceLocator": "https://arxiv.org/html/2607.15375v2; locators above; CITATION_AUDIT.md",
+      "assessorKind": "agent",
+      "recordOrigin": "current bounded source-comparison report"
+    },
+    {
+      "citation": "Ercan, arXiv:2608.20606v1",
+      "usedFor": "Imported five-point endpoint, prior six-point result and method attribution",
+      "readWhat": "Current source-comparison agent inspected Section 1 equations (3)-(4), Theorem 1.1 and the introduction's methodological/certificate account. The external Bernstein certificate and whole proof were not replayed.",
+      "date": "2026-09-26",
+      "evidenceLocator": "https://arxiv.org/html/2608.20606v1; Section 1 and Theorem 1.1; CITATION_AUDIT.md",
+      "assessorKind": "agent",
+      "recordOrigin": "current bounded source-comparison report"
+    },
+    {
+      "citation": "Korea Superintelligence Labs, Sharp constants for Ptolemaic negative type, Ideosphere version 3",
+      "usedFor": "Attribution of general anchor constants, split thresholds/sharpness and the remaining low-exponent boundary",
+      "readWhat": "Current source-comparison agent inspected Section 11.1 equation (9), Theorems 11.1-11.3 on pp.15-17; Section 12 equation (12) and Corollary 12.2 on pp.17-18; Section 15 p.26.",
+      "date": "2026-09-26",
+      "evidenceLocator": "https://ideosphere.ai/papers/ptolemaic-negtype-v3.pdf; exact locators above; CITATION_AUDIT.md",
+      "assessorKind": "agent",
+      "recordOrigin": "current bounded source-comparison report",
+      "limitation": "Publisher fingerprint recorded only as declared; no independently downloaded/hash-verified PDF and no replay of external formalization."
+    }
+  ],
+  "sourceCoverageLimits": [
+    "The legacy name sourcesReadInFull denotes the specified relevant full-text passages, not entire-work reading.",
+    "Li-Weston is recorded as abstract-level comparison in the supplied review; it is not included above as full-text proof reading.",
+    "Fiedler metadata/front matter and Haynsworth metadata were checked historically; no full-source audit is invented.",
+    "An external source's theorem is a dependency, not independently validated by accurate citation metadata."
+  ],
+  "limitationTriage": [
+    {
+      "limitation": "The supplied bibliography omits KSL Ideosphere v3's general anchor constants and split-threshold analysis.",
+      "closingQuestion": "Would a bounded source comparison and attribution repair close this positioning omission?",
+      "triedOrSearched": "26 September primary-source comparison found exact overlap locators and a remaining open low-exponent bound; the proposed attribution is in CITATION_AUDIT.md.",
+      "estimatedCost": "Bounded manuscript/bibliography repair and affected verification; no new theorem needed",
+      "cheap": true,
+      "decision": "CLOSED",
+      "resolution": "The coordinator added the KSL discussion and citation; readback confirmed Section 1.1, the inline bibliography and references.bib at the documented source checkpoint. Final rendering and archive checks remain distinct.",
+      "reasonOpen": "",
+      "whyNotClosedNow": "",
+      "releaseBlocking": false
+    },
+    {
+      "limitation": "The five-point endpoint in the all-cardinality corollary imports Ercan's result without replaying its external Bernstein certificate.",
+      "closingQuestion": "Can the quoted theorem's role be kept explicit without pretending the external certificate was reproduced?",
+      "triedOrSearched": "Theorem 1.1 and its declared certificate role were compared; the m>=6 argument is independent of this import.",
+      "estimatedCost": "External certificate replay cost unknown from the inspected records; no demonstrated <=2 hour closure",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Retained as an explicitly attributed external theorem dependency; not described as independently replayed.",
+      "whyNotClosedNow": "No certificate replay was performed in this documentation task or recorded in the supplied package."
+    },
+    {
+      "limitation": "No classification of every extremal metric or optimality of the packing constant 2 in its complementary regime.",
+      "closingQuestion": "Does a cited known theorem or cheap checked computation already supply the omitted classification?",
+      "triedOrSearched": "Inspected the manuscript scope, supplied reviewer proposals and current predecessor comparison; no supported closure is recorded.",
+      "estimatedCost": "Unknown research effort; no demonstrated <=2 hour closure in inspected evidence",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Optional extension outside the proved universal-threshold claim, not a gap silently relabeled as solved.",
+      "whyNotClosedNow": "Would require new research beyond publication documentation."
+    },
+    {
+      "limitation": "No metric-independent positive spectral gap below the endpoint without normalization.",
+      "closingQuestion": "Could an elementary scaling argument settle the proposed unrestricted strengthening?",
+      "triedOrSearched": "Manuscript Section 8 observes that rescaling distances changes Gram eigenvalues without changing negative type.",
+      "estimatedCost": "Elementary stated scaling argument",
+      "cheap": true,
+      "decision": "CLOSED",
+      "resolution": "The unrestricted strengthening is not claimed; any future quantitative stability problem must state a normalization.",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "No formal proof-assistant verification, authenticated external specialist review or exhaustive priority determination.",
+      "closingQuestion": "Can existing check logs, a supplied review or bounded searches honestly close these assurance dimensions?",
+      "triedOrSearched": "Inspected the supplied review, claim/check map, replay scope and source comparison; none authenticates those stronger assurances.",
+      "estimatedCost": "Unknown and not replaced by more finite testing; no demonstrated <=2 hour closure",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "These dimensions remain explicitly unestablished; the release is unrefereed.",
+      "whyNotClosedNow": "Publication documentation cannot create external independence, universal formal proof or exhaustive historical knowledge."
+    },
+    {
+      "limitation": "Historical numerical empty samples and mixed aggregate components cannot be treated as measurements.",
+      "closingQuestion": "Can corrected current reporting make missingness and distinct statistics explicit without rewriting history?",
+      "triedOrSearched": "Supplied CURRENT_NUMERICAL_SUMMARY.json and reporting verifier preserve nulls, separate current statistics, and reject three missingness/count mutations.",
+      "estimatedCost": "Implemented in the supplied version 1.0 reporting layer; no new experiment required for documentation",
+      "cheap": true,
+      "decision": "CLOSED",
+      "resolution": "Current records distinguish missing historical information, fresh instrumented measurements, convergence and feasibility. Historical bytes remain unchanged.",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    }
+  ],
+  "extensionScout": {
+    "by": "Publication documentation agent, using the supplied reviewer proposals and current source-comparison record",
+    "date": "2026-09-26",
+    "scope": "Retrospective bounded intake pass; no new proof search or manuscript mutation",
+    "proposals": [
+      "Retain the exact seven-point worked witness to expose the first new cardinality.",
+      "Correct the omitted KSL anchor-constant/split-threshold attribution before public freeze.",
+      "Consider equality classification, normalized stability and formalization only as separately scoped research extensions."
+    ],
+    "actions": [
+      "The seven-point example is already in version 1.0 and covered by the supplied revision checker; no redundant new experiment requested.",
+      "The coordinator applied the attribution repair to the working public copy; source readback confirmed it without changing the immutable input. Final rendering and archive checks remain separate.",
+      "Kept the optional extensions and absent assurance dimensions explicit; no unsupported cheap-closure claim or task expansion."
+    ]
+  }
+}

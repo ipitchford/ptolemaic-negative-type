@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/semantic-mutations/deletion-sign/verify_symbolic.py", line 89, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/run-20260926T212922800639Z/semantic-mutations/deletion-sign/verify_symbolic.py", line 56, in main
+    assert all(s.factor(x)==0 for x in deleted-wanted)
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

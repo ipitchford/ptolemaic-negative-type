@@ -1,0 +1,123 @@
+{
+  "schema": "ptolemaic-final-typeset/v1",
+  "recordedAt": "2026-09-26T21:44:37Z",
+  "status": "MAIN_PAPER_READY_RESPONSE_ORIGINAL_PRESERVED",
+  "scope": "Local typesetting and PDF implementation QA, not mathematical proof checking, external review, or publication confirmation.",
+  "repository": "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/repository",
+  "sourceEditsByThisAgent": false,
+  "sourceInputs": [
+    {
+      "path": "paper/ptolemaic.tex",
+      "sha256": "69e666bb731834125121fd20d6941df05cecc79b45477e5d3761f260a1656c66"
+    },
+    {
+      "path": "paper/references.bib",
+      "sha256": "d1c35fb77fd38b1c42673459af7e4d602492a63de02b248004e6da80b1bd24d6"
+    },
+    {
+      "path": "scripts/build_paper.py",
+      "sha256": "8f29ddf22f6395c18cebb6154260aa2a5883397bd6810e0b1125dd8dec0d49ab"
+    },
+    {
+      "path": "review/RESPONSE_TO_REVIEW.tex",
+      "sha256": "be47c56c847a1cade5fab3edd764c1c8a60941d0d86d14ed5d4758bb251b3b72"
+    }
+  ],
+  "build": {
+    "argv": [
+      "/Users/admin/.venvs/analysis-py313/bin/python",
+      "-B",
+      "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/repository/scripts/build_paper.py",
+      "--output",
+      "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/typeset-final-20260926",
+      "--response"
+    ],
+    "explicitEnvironment": {
+      "PATH": "/Users/admin/Library/TinyTeX/bin/universal-darwin:/opt/homebrew/bin:/usr/bin:/bin",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "SOURCE_DATE_EPOCH": "1790294400",
+      "FORCE_SOURCE_DATE": "1",
+      "TZ": "UTC"
+    },
+    "environmentNote": "SOURCE_DATE_EPOCH, FORCE_SOURCE_DATE and TZ are set by the supplied builder for its TeX subprocesses; other inherited environment values are not included in this operational receipt.",
+    "engine": "/Users/admin/Library/TinyTeX/bin/universal-darwin/pdflatex",
+    "engineProducer": "pdfTeX-1.40.29",
+    "mainPaperPasses": 3,
+    "mainPaperStatus": "PASS",
+    "combinedCommandStatus": "FAIL_AFTER_MAIN_PAPER_EXPORTED",
+    "combinedCommandFailure": "The optional response branch initially lacked setspace.sty; main-paper passes and export had already completed successfully.",
+    "sourcesUnchangedByBuild": true
+  },
+  "mainPaper": {
+    "pdf": "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/typeset-final-20260926/ptolemaic.pdf",
+    "pdfSha256": "08a36cbbe8ce98872b37b655d281d5f181c85c512f1704db0fadf9ae1618ede0",
+    "bytes": 278227,
+    "pages": 15,
+    "pageSize": "A4, 595.276 x 841.89 points",
+    "pdfVersion": "1.7",
+    "encrypted": false,
+    "javascript": false,
+    "log": "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/typeset-final-20260926/ptolemaic.log",
+    "logSha256": "050f22fa3380097d35670fdd8b5f3b8e7ddd1ccccd93c94384944a179ecce516",
+    "extractedText": "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/typeset-final-20260926/ptolemaic.txt",
+    "extractedTextSha256": "87f3a43a3d1635f498818990f7f175035c82e947651ce9213099de4083abdf33",
+    "checks": {
+      "finalLogWarningMatches": 0,
+      "finalLogPattern": "Overfull|undefined references|undefined citations|Missing character|Warning",
+      "rawTexPreflight": "PASS",
+      "rawTexFindings": 0,
+      "fontSubsetsListed": 13,
+      "allListedFontsEmbedded": true,
+      "allListedFontsSubset": true,
+      "allListedFontsUnicode": true,
+      "kslAttributionTextPresent": true,
+      "kslBibliographyTextPresent": true,
+      "sevenPointExampleTextPresent": true,
+      "unrefereedLabelPresent": true
+    },
+    "qaCommands": [
+      "/opt/homebrew/bin/pdfinfo <pdf>",
+      "/opt/homebrew/bin/pdffonts <pdf>",
+      "/opt/homebrew/bin/pdftotext -layout <pdf> <extractedText>",
+      "/Users/admin/.venvs/analysis-py313/bin/python -B /Users/admin/.agents/skills/evidence-press-publication/scripts/pdf_tex_preflight.py <pdf>"
+    ],
+    "visualQa": "Publication orchestrator separately reported inspecting all 15 pages with no overlap or clipping. This typesetting agent did not perform or independently attest that visual inspection.",
+    "publicationCopy": "Publication orchestrator reported copying this exact PDF to repository/paper/ptolemaic.pdf, with the same SHA-256. That copy is outside this agent's write scope."
+  },
+  "dependencies": {
+    "installationRoot": "/Users/admin/Library/TinyTeX",
+    "permission": "Explicit filesystem and network permission granted for small standard TeX dependencies in this turn.",
+    "installedPackages": [
+      {"name": "needspace", "revision": 77682, "version": "1.3e", "downloadKilobytesReported": 1},
+      {"name": "enumitem", "revision": 79618, "version": "3.11", "downloadKilobytesReported": 14},
+      {"name": "fancyhdr", "revision": 78348, "version": "5.2", "downloadKilobytesReported": 9},
+      {"name": "cleveref", "revision": 79618, "version": "0.21.4", "downloadKilobytesReported": 28},
+      {"name": "setspace", "revision": 77682, "version": "6.7b", "downloadKilobytesReported": 8}
+    ],
+    "successfulMirror": "https://tex.org.uk/systems/texlive/tlnet",
+    "repositorySelection": "Explicit per-command repository; no persistent repository configuration changed.",
+    "integrityChecks": "Normal tlmgr repository and archive verification retained. One setspace archive checksum mismatch at a different CTAN mirror was rejected by tlmgr; the package was then installed from the verified successful mirror.",
+    "fullDistributionInstallOrUpgrade": false,
+    "newtxInstalledByThisAgent": false,
+    "globalFontsInstalled": false,
+    "tectonic": "Installed version 0.17.0 detected but not used."
+  },
+  "response": {
+    "status": "ORIGINAL_PDF_PRESERVED_REBUILD_NOT_VERIFIED",
+    "originalPdf": "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/repository/review/RESPONSE_TO_REVIEW.pdf",
+    "originalPdfSha256": "59da248417d022b75da4649a291727fd18421aa91342f59414f401e4df1c9e6f",
+    "originalPdfPages": 2,
+    "originalPdfBytes": 46989,
+    "retryReceipt": "/Users/admin/Documents/Codex/ptolemaic-publication-20260926.NMT4BM/replay-checks/typeset-response-final-20260926/RESPONSE_TYPESET_RECEIPT.json",
+    "retryReceiptSha256": "b976de136543bea89b93f3f462860cf6e328fed86b2d5c2db99ad6d9168385e6",
+    "retryFailure": "After setspace installation, XeLaTeX failed on pass 1 because fontspec could not find the source-requested DejaVu Serif font. No new response PDF was produced.",
+    "fontAttempt": "Existing DejaVu font files were found in the analysis Python environment. A task-local Fontconfig configuration made fc-match find them, but XeLaTeX still rejected the named font. No source edit, font substitution, global font installation, or engine substitution was attempted.",
+    "decision": "Stop this nonessential rebuild branch and preserve the supplied response PDF, as directed by the publication orchestrator."
+  },
+  "limitations": [
+    "This receipt records implementation and typesetting QA; it is not an independent scientific review or proof certificate.",
+    "The main paper's attribution-only source change did not trigger another numerical science replay; the separately retained intake replay evidence remains distinct.",
+    "The fixed PDF creation timestamp comes from the builder's SOURCE_DATE_EPOCH and is not the actual wall-clock build time.",
+    "The response rebuild remains unverified in this local TeX/font environment; the historical response PDF was preserved without changes."
+  ]
+}

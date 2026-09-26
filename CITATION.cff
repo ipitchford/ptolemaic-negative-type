@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite the exact version and retain its unrefereed-candidate qualification."
+type: software
+title: "Sharp negative type of finite Ptolemaic metrics: manuscript and evidence package"
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+date-released: 2026-09-26
+doi: 10.5281/zenodo.22983333
+url: https://evidencepress.org/releases/ptolemaic-negative-type/
+repository-code: https://github.com/ipitchford/ptolemaic-negative-type
+license:
+  - CC0-1.0
+  - MIT
+abstract: >-
+  Unrefereed analytic proof candidate for the sharp negative-type exponent of
+  every finite Ptolemaic metric. Exact and symbolic checks support particular
+  identities and witnesses, not formal or independent verification of the
+  universal proof. Component licences and historical rights are mapped in
+  LICENSES.md; the two licences do not apply indiscriminately to all files.
+preferred-citation:
+  type: report
+  title: "Sharp negative type of finite Ptolemaic metrics"
+  authors:
+    - name: Anonymous
+  year: 2026
+  version: 1.0.0-candidate
+  doi: 10.5281/zenodo.22983333
+  publisher:
+    name: Evidence Press
+  notes: "Unrefereed candidate. Manuscript dated 25 September; public package dated 26 September 2026."

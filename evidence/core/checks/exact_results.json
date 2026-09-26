@@ -1,0 +1,202 @@
+{
+  "M1_counterexample": {
+    "shortened_checks": [
+      210,
+      105
+    ],
+    "sign_certificate": "sqrt(2)>185/132, plus inequalities in note",
+    "star_checks": [
+      210,
+      105
+    ]
+  },
+  "M2_counterexample": {
+    "M_lower": "36/25",
+    "T_upper": "119/100",
+    "r_upper": "246/125",
+    "uniform_upper": "400/281"
+  },
+  "augmented_inverse_cases": 24,
+  "compatibility_rational_cases": 5733,
+  "deletion_cases": 156,
+  "diagonal_congruence_cases": 24,
+  "endpoint_witnesses": [
+    {
+      "T": "4",
+      "a": 1,
+      "m": 3,
+      "ptolemy": 0,
+      "r": 2,
+      "rank": 1,
+      "triangles": 6
+    },
+    {
+      "T": "3",
+      "a": 1,
+      "m": 4,
+      "ptolemy": 3,
+      "r": 3,
+      "rank": 2,
+      "triangles": 24
+    },
+    {
+      "T": "9/4",
+      "a": 2,
+      "m": 5,
+      "ptolemy": 15,
+      "r": 3,
+      "rank": 3,
+      "triangles": 60
+    },
+    {
+      "T": "2",
+      "a": 2,
+      "m": 6,
+      "ptolemy": 45,
+      "r": 4,
+      "rank": 4,
+      "triangles": 120
+    },
+    {
+      "T": "16/9",
+      "a": 3,
+      "m": 7,
+      "ptolemy": 105,
+      "r": 4,
+      "rank": 5,
+      "triangles": 210
+    },
+    {
+      "T": "5/3",
+      "a": 3,
+      "m": 8,
+      "ptolemy": 210,
+      "r": 5,
+      "rank": 6,
+      "triangles": 336
+    },
+    {
+      "T": "25/16",
+      "a": 4,
+      "m": 9,
+      "ptolemy": 378,
+      "r": 5,
+      "rank": 7,
+      "triangles": 504
+    },
+    {
+      "T": "3/2",
+      "a": 4,
+      "m": 10,
+      "ptolemy": 630,
+      "r": 6,
+      "rank": 8,
+      "triangles": 720
+    },
+    {
+      "T": "36/25",
+      "a": 5,
+      "m": 11,
+      "ptolemy": 990,
+      "r": 6,
+      "rank": 9,
+      "triangles": 990
+    },
+    {
+      "T": "7/5",
+      "a": 5,
+      "m": 12,
+      "ptolemy": 1485,
+      "r": 7,
+      "rank": 10,
+      "triangles": 1320
+    },
+    {
+      "T": "49/36",
+      "a": 6,
+      "m": 13,
+      "ptolemy": 2145,
+      "r": 7,
+      "rank": 11,
+      "triangles": 1716
+    },
+    {
+      "T": "4/3",
+      "a": 6,
+      "m": 14,
+      "ptolemy": 3003,
+      "r": 8,
+      "rank": 12,
+      "triangles": 2184
+    },
+    {
+      "T": "11/9",
+      "a": 9,
+      "m": 20,
+      "ptolemy": 14535,
+      "r": 11,
+      "rank": 18,
+      "triangles": 6840
+    }
+  ],
+  "normalised_triangle_rational_cases": 2109,
+  "scope": "exact identities and finite witnesses; analytic proof in RESEARCH_NOTE.md",
+  "status": "PASS",
+  "strict_cut_decompositions": 50,
+  "support_pattern_cases": 22199,
+  "thresholds": [
+    {
+      "T": "2",
+      "m": 6
+    },
+    {
+      "T": "16/9",
+      "m": 7
+    },
+    {
+      "T": "5/3",
+      "m": 8
+    },
+    {
+      "T": "25/16",
+      "m": 9
+    },
+    {
+      "T": "3/2",
+      "m": 10
+    },
+    {
+      "T": "36/25",
+      "m": 11
+    },
+    {
+      "T": "7/5",
+      "m": 12
+    },
+    {
+      "T": "49/36",
+      "m": 13
+    },
+    {
+      "T": "4/3",
+      "m": 14
+    },
+    {
+      "T": "11/9",
+      "m": 20
+    },
+    {
+      "T": "13/12",
+      "m": 50
+    },
+    {
+      "T": "51/49",
+      "m": 100
+    },
+    {
+      "T": "151/149",
+      "m": 300
+    }
+  ],
+  "uniform_star_cases": 145
+}

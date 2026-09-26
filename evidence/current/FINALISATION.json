@@ -1,0 +1,13 @@
+{
+  "full_replay_input_files": 103,
+  "full_replay_input_manifest": "evidence/current/FULL_REPLAY_INPUT_SHA256SUMS",
+  "full_replay_jobs": 9,
+  "full_replay_receipt": "evidence/current/full_replay/REPLAY_REPORT.json",
+  "full_replay_status": "PASS",
+  "manifested_final_files": 130,
+  "pdf_qa": "evidence/current/PDF_QA.json",
+  "prepared_date": "2026-09-25",
+  "publication_deployment_performed": false,
+  "source_invariance": "72 label identifiers retained and 43 numbered equation environments byte-identical to reviewed source",
+  "version": "1.0"
+}
